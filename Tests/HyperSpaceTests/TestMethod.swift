@@ -12,7 +12,7 @@ class TestMethod: XCTestCase {
   
   func testMethodHashable() {
     XCTAssertEqual(URL.Method.get, URL.Method("GET"))
-    XCTAssertNotEqual(URL.Method.put, URL.Method("PUT"))
+    XCTAssertNotEqual(URL.Method.get, URL.Method("PUT"))
     XCTAssertEqual(URL.Method.get.hashValue, URL.Method("GET").hashValue)
   }
   
