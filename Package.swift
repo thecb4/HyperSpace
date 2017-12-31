@@ -7,13 +7,8 @@ let package = Package(
     name: "HyperSpace",
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-//        .library(
-//            name: "HyperSpaceStaticLib",
-//            type: .static,
-//            targets: ["HyperSpace"]),
         .library(
           name: "HyperSpace",
-          type: .dynamic,
           targets: ["HyperSpace"])
     ],
     dependencies: [
