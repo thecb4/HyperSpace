@@ -46,6 +46,13 @@ struct Api: EndpointType {
       }
     }
     
+    var headers: [Header] {
+      switch self {
+      case .auth, .me, .posts:
+        return []
+      }
+    }
+    
   }
   
   static let current: Environment = .localhost
@@ -68,6 +75,13 @@ struct Auth: EndpointType {
         return .post
       case .signOut:
         return .get
+      }
+    }
+    
+    var headers: [Header] {
+      switch self {
+      case .signIn, .signOut:
+        return []
       }
     }
     

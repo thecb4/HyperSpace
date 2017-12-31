@@ -53,6 +53,7 @@ public protocol EndpointType {
 public protocol RouteType {
   var route: URL.Route { get }
   var method: URL.Method { get }
+  var headers: [Header] { get }
 }
 
 public protocol EnvironmentType: URLRepresentable {
