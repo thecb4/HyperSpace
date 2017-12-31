@@ -46,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		E97513C71FF88A360088E1AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E97513C81FF88C710088E1AA /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		"HyperSpace::HyperSpace::Product" /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HyperSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* HyperSpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpaceTests.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
+				E97513C81FF88C710088E1AA /* .travis.yml */,
 				E97513C71FF88A360088E1AA /* README.md */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
