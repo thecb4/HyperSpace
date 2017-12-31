@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias Header = [String:String]
+
 public struct Router<T: EndpointType>: URLRepresentable {
     public let environment: T.Environment
     public let route: T.Route
@@ -49,7 +51,8 @@ public protocol EndpointType {
 }
 
 public protocol RouteType {
-    var route: URL.Route { get }
+  var route: URL.Route { get }
+  var method: URL.Method { get }
 }
 
 public protocol EnvironmentType: URLRepresentable {

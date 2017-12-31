@@ -10,50 +10,70 @@ import XCTest
 import HyperSpace
 
 struct Api: EndpointType {
-    enum Environment: EnvironmentType {
-        case localhost
-        case test
-        case production
-        
-        var value: URL.Env {
-            switch self {
-            case .localhost: return .localhost(8080)
-            case .test: return .init(IP(126, 251, 20, 32))
-            case .production: return .init(.https, "myproductionserver.com", 3000)
-            }
+  enum Environment: EnvironmentType {
+      case localhost
+      case test
+      case production
+    
+      var value: URL.Env {
+          switch self {
+          case .localhost: return .localhost(8080)
+          case .test: return .init(IP(126, 251, 20, 32))
+          case .production: return .init(.https, "myproductionserver.com", 3000)
+          }
+      }
+  }
+  
+  enum Route: RouteType {
+    case auth, me
+    case posts(for: String)
+    
+    var route: URL.Route {
+        switch self {
+        case .me: return URL.Route(at: "me").fragment("test")
+        case .auth: return .init(at: "auth")
+        case let .posts(for: date):
+            return URL.Route(at: "posts").query(("date", date), ("userId", "someId"))
         }
     }
     
-    enum Route: RouteType {
-        case auth, me
-        case posts(for: String)
-        
-        var route: URL.Route {
-            switch self {
-            case .me: return URL.Route(at: "me").fragment("test")
-            case .auth: return .init(at: "auth")
-            case let .posts(for: date):
-                return URL.Route(at: "posts").query(("date", date), ("userId", "someId"))
-            }
-        }
+    var method: URL.Method {
+      switch self {
+      case .me, .auth:
+        return .get
+      case .posts:
+        return .post
+      }
     }
     
-    static let current: Environment = .localhost
+  }
+  
+  static let current: Environment = .localhost
 }
 
 struct Auth: EndpointType {
-    enum Route: RouteType {
-        case signIn, signOut
-        
-        var route: URL.Route {
-            switch self {
-            case .signIn: return .init(at: "signIn")
-            case .signOut: return .init(at: "me", "signOut")
-            }
-        }
+  enum Route: RouteType {
+    case signIn, signOut
+  
+    var route: URL.Route {
+      switch self {
+      case .signIn: return .init(at: "signIn")
+      case .signOut: return .init(at: "me", "signOut")
+      }
     }
     
-    static let current = URL.Env(.https, "auth.server.com", 8080).at("api", "new")
+    var method: URL.Method {
+      switch self {
+      case .signIn:
+        return .post
+      case .signOut:
+        return .get
+      }
+    }
+    
+  }
+  
+  static let current = URL.Env(.https, "auth.server.com", 8080).at("api", "new")
 }
 
 class TestRouter: XCTestCase {
