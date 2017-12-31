@@ -8,7 +8,7 @@ env:
 - ACTION=test  PLATFORM=tvOS    DESTINATION='platform=tvOS Simulator,name=Apple TV'
 
 script:
-- xcodebuild clean $ACTION -project HyperSpace.xcodeproj -scheme HyperSpace -destination "$DESTINATION"
+- xcodebuild clean $ACTION -project HyperSpace.xcodeproj -scheme HyperSpace-Package -destination "$DESTINATION"
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
