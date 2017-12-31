@@ -69,3 +69,15 @@ extension String: RoutePathComponent {
         return self
     }
 }
+
+extension Int: RoutePathComponent {
+  public var stringValue: String {
+    return self.stringValue
+  }
+}
+
+extension Int64: RoutePathComponent {
+  public var stringValue: String {
+    return self.stringValue
+  }
+}
