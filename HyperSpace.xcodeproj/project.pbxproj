@@ -21,6 +21,22 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E97513E91FF897680088E1AA /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DD1FF896EC0088E1AA /* TestEnvironment.swift */; };
+		E97513EA1FF8976C0088E1AA /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DF1FF896EC0088E1AA /* TestIP.swift */; };
+		E97513EB1FF8976F0088E1AA /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513E11FF896EC0088E1AA /* TestQuery.swift */; };
+		E97513EC1FF897730088E1AA /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513E01FF896EC0088E1AA /* TestRoute.swift */; };
+		E97513ED1FF897760088E1AA /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DB1FF896EC0088E1AA /* TestRoutePath.swift */; };
+		E97513EE1FF8977B0088E1AA /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DE1FF896EC0088E1AA /* TestRouter.swift */; };
+		E97513EF1FF8977F0088E1AA /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DC1FF896EC0088E1AA /* TestScheme.swift */; };
+		E97513F01FF8981A0088E1AA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513D01FF896950088E1AA /* Environment.swift */; };
+		E97513F11FF8981A0088E1AA /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513D11FF896950088E1AA /* Host.swift */; };
+		E97513F21FF8981A0088E1AA /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CF1FF896950088E1AA /* IP.swift */; };
+		E97513F31FF8981A0088E1AA /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CA1FF896950088E1AA /* IPv6.swift */; };
+		E97513F41FF8981A0088E1AA /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CD1FF896950088E1AA /* Path.swift */; };
+		E97513F51FF8981A0088E1AA /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CE1FF896950088E1AA /* Query.swift */; };
+		E97513F61FF8981A0088E1AA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513C91FF896950088E1AA /* Route.swift */; };
+		E97513F71FF8981A0088E1AA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CC1FF896950088E1AA /* Router.swift */; };
+		E97513F81FF8981A0088E1AA /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CB1FF896950088E1AA /* Scheme.swift */; };
 		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_27 /* HyperSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HyperSpaceTests.swift */; };
 		OBJ_29 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HyperSpace::HyperSpace::Product" /* HyperSpace.framework */; };
@@ -47,6 +63,22 @@
 /* Begin PBXFileReference section */
 		E97513C71FF88A360088E1AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E97513C81FF88C710088E1AA /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		E97513C91FF896950088E1AA /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		E97513CA1FF896950088E1AA /* IPv6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPv6.swift; sourceTree = "<group>"; };
+		E97513CB1FF896950088E1AA /* Scheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
+		E97513CC1FF896950088E1AA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E97513CD1FF896950088E1AA /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		E97513CE1FF896950088E1AA /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		E97513CF1FF896950088E1AA /* IP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IP.swift; sourceTree = "<group>"; };
+		E97513D01FF896950088E1AA /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		E97513D11FF896950088E1AA /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		E97513DB1FF896EC0088E1AA /* TestRoutePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRoutePath.swift; sourceTree = "<group>"; };
+		E97513DC1FF896EC0088E1AA /* TestScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScheme.swift; sourceTree = "<group>"; };
+		E97513DD1FF896EC0088E1AA /* TestEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
+		E97513DE1FF896EC0088E1AA /* TestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
+		E97513DF1FF896EC0088E1AA /* TestIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestIP.swift; sourceTree = "<group>"; };
+		E97513E01FF896EC0088E1AA /* TestRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRoute.swift; sourceTree = "<group>"; };
+		E97513E11FF896EC0088E1AA /* TestQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestQuery.swift; sourceTree = "<group>"; };
 		"HyperSpace::HyperSpace::Product" /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HyperSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* HyperSpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpaceTests.swift; sourceTree = "<group>"; };
@@ -84,6 +116,13 @@
 		OBJ_11 /* HyperSpaceTests */ = {
 			isa = PBXGroup;
 			children = (
+				E97513DD1FF896EC0088E1AA /* TestEnvironment.swift */,
+				E97513DF1FF896EC0088E1AA /* TestIP.swift */,
+				E97513E11FF896EC0088E1AA /* TestQuery.swift */,
+				E97513E01FF896EC0088E1AA /* TestRoute.swift */,
+				E97513DB1FF896EC0088E1AA /* TestRoutePath.swift */,
+				E97513DE1FF896EC0088E1AA /* TestRouter.swift */,
+				E97513DC1FF896EC0088E1AA /* TestScheme.swift */,
 				OBJ_12 /* HyperSpaceTests.swift */,
 			);
 			name = HyperSpaceTests;
@@ -123,6 +162,15 @@
 		OBJ_8 /* HyperSpace */ = {
 			isa = PBXGroup;
 			children = (
+				E97513D01FF896950088E1AA /* Environment.swift */,
+				E97513D11FF896950088E1AA /* Host.swift */,
+				E97513CF1FF896950088E1AA /* IP.swift */,
+				E97513CA1FF896950088E1AA /* IPv6.swift */,
+				E97513CD1FF896950088E1AA /* Path.swift */,
+				E97513CE1FF896950088E1AA /* Query.swift */,
+				E97513C91FF896950088E1AA /* Route.swift */,
+				E97513CC1FF896950088E1AA /* Router.swift */,
+				E97513CB1FF896950088E1AA /* Scheme.swift */,
 				OBJ_9 /* HyperSpace.swift */,
 			);
 			name = HyperSpace;
@@ -220,7 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				E97513EF1FF8977F0088E1AA /* TestScheme.swift in Sources */,
+				E97513EB1FF8976F0088E1AA /* TestQuery.swift in Sources */,
 				OBJ_27 /* HyperSpaceTests.swift in Sources */,
+				E97513ED1FF897760088E1AA /* TestRoutePath.swift in Sources */,
+				E97513EA1FF8976C0088E1AA /* TestIP.swift in Sources */,
+				E97513EE1FF8977B0088E1AA /* TestRouter.swift in Sources */,
+				E97513EC1FF897730088E1AA /* TestRoute.swift in Sources */,
+				E97513E91FF897680088E1AA /* TestEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				E97513F21FF8981A0088E1AA /* IP.swift in Sources */,
+				E97513F51FF8981A0088E1AA /* Query.swift in Sources */,
+				E97513F11FF8981A0088E1AA /* Host.swift in Sources */,
 				OBJ_36 /* HyperSpace.swift in Sources */,
+				E97513F81FF8981A0088E1AA /* Scheme.swift in Sources */,
+				E97513F71FF8981A0088E1AA /* Router.swift in Sources */,
+				E97513F31FF8981A0088E1AA /* IPv6.swift in Sources */,
+				E97513F61FF8981A0088E1AA /* Route.swift in Sources */,
+				E97513F41FF8981A0088E1AA /* Path.swift in Sources */,
+				E97513F01FF8981A0088E1AA /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
