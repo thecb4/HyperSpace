@@ -82,7 +82,7 @@ struct Auth: EndpointType {
     var headers: [Header] {
       switch self {
       case .signIn, .signOut:
-        return []
+        return [Header(field:"Content-Type",value:"application/json")]
       }
     }
     
@@ -110,6 +110,10 @@ class TestRouter: XCTestCase {
     XCTAssertEqual(Router<Auth>(at: .signIn).url, URL(string: "https://auth.server.com:8080/api/new/signIn"))
     XCTAssertEqual(Router<Auth>(at: .signOut).url, URL(string: "https://auth.server.com:8080/api/new/me/signOut"))
     XCTAssertEqual(Router<Auth>(at: .signIn).request.url,URL(string: "https://auth.server.com:8080/api/new/signIn"))
+    
+    let request = Router<Auth>(at: .signIn).request(with: .useProtocolCachePolicy, timeoutInterval: 500)
+    XCTAssertEqual(request.url,URL(string: "https://auth.server.com:8080/api/new/signIn"))
+    
   }
     
 }
