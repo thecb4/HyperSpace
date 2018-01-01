@@ -106,9 +106,10 @@ class TestRouter: XCTestCase {
         XCTAssertEqual(Router<Api>(.production, at: .posts(for: "12.04.2017")).url, URL(string: "https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId"))
     }
     
-    func testAuthRouter() {
-        XCTAssertEqual(Router<Auth>(at: .signIn).url, URL(string: "https://auth.server.com:8080/api/new/signIn"))
-        XCTAssertEqual(Router<Auth>(at: .signOut).url, URL(string: "https://auth.server.com:8080/api/new/me/signOut"))
-    }
+  func testAuthRouter() {
+    XCTAssertEqual(Router<Auth>(at: .signIn).url, URL(string: "https://auth.server.com:8080/api/new/signIn"))
+    XCTAssertEqual(Router<Auth>(at: .signOut).url, URL(string: "https://auth.server.com:8080/api/new/me/signOut"))
+    XCTAssertEqual(Router<Auth>(at: .signIn).request.url,URL(string: "https://auth.server.com:8080/api/new/signIn"))
+  }
     
 }
