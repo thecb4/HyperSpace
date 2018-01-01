@@ -54,6 +54,13 @@ struct Api: EndpointType {
       }
     }
     
+    var body: Data? {
+      switch self {
+      case .auth, .me, .posts:
+        return nil
+      }
+    }
+    
   }
   
   static let current: Environment = .localhost
@@ -86,6 +93,14 @@ struct Auth: EndpointType {
       }
     }
     
+    var body: Data? {
+      switch self {
+      case .signIn, .signOut:
+        let data = try? JSONEncoder().encode(["apple":"sauce"])
+        return data
+      }
+    }
+    
 //    var request: URLRequest {
 //      switch self {
 //      case .signIn:
@@ -109,6 +124,7 @@ class TestRouter: XCTestCase {
     
     let request = Router<Api>(at: .me).request(with: .useProtocolCachePolicy, timeoutInterval: 500)
     XCTAssertEqual(request.url,URL(string: "http://localhost:8080/me#test"))
+    XCTAssertNil(Router<Api>(at: .me).route.body)
   }
     
   func testAuthRouter() {
@@ -118,7 +134,7 @@ class TestRouter: XCTestCase {
     
     let request = Router<Auth>(at: .signIn).request(with: .useProtocolCachePolicy, timeoutInterval: 500)
     XCTAssertEqual(request.url,URL(string: "https://auth.server.com:8080/api/new/signIn"))
-    
+    XCTAssertNotNil(Router<Auth>(at: .signIn).route.body)
   }
     
 }

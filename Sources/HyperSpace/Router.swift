@@ -54,6 +54,10 @@ public struct Router<T: EndpointType>: URLRepresentable {
     
     request.httpMethod = method.rawValue
     
+    if let body = self.route.body {
+      request.httpBody = body
+    }
+    
     for header in headers {
       request.addValue(header.value, forHTTPHeaderField: header.field)
     }
@@ -86,6 +90,7 @@ public protocol RouteType {
   var route: URL.Route { get }
   var method: URL.Method { get }
   var headers: [Header] { get }
+  var body: Data? { get }
 
 }
 
