@@ -25,6 +25,7 @@ struct Api: EndpointType {
   }
   
   enum Route: RouteType {
+    
     case auth, me
     case posts(for: String)
     
@@ -84,6 +85,13 @@ struct Auth: EndpointType {
         return []
       }
     }
+    
+//    var request: URLRequest {
+//      switch self {
+//      case .signIn:
+//        return Request(self)
+//      }
+//    }
     
   }
   
