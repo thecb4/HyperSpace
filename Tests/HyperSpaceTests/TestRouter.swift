@@ -100,11 +100,16 @@ struct Auth: EndpointType {
 
 class TestRouter: XCTestCase {
     
-    func testApiRouter() {
-        XCTAssertEqual(Router<Api>(at: .me).url, URL(string: "http://localhost:8080/me#test"))
-        XCTAssertEqual(Router<Api>(.test, at: .auth).url, URL(string: "http://126.251.20.32/auth"))
-        XCTAssertEqual(Router<Api>(.production, at: .posts(for: "12.04.2017")).url, URL(string: "https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId"))
-    }
+  func testApiRouter() {
+    XCTAssertEqual(Router<Api>(at: .me).url, URL(string: "http://localhost:8080/me#test"))
+    XCTAssertEqual(Router<Api>(.test, at: .auth).url, URL(string: "http://126.251.20.32/auth"))
+    XCTAssertEqual(Router<Api>(.production, at: .posts(for: "12.04.2017")).url, URL(string: "https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId"))
+    
+    XCTAssertEqual(Router<Api>(at: .me).request.url,URL(string: "http://localhost:8080/me#test"))
+    
+    let request = Router<Api>(at: .me).request(with: .useProtocolCachePolicy, timeoutInterval: 500)
+    XCTAssertEqual(request.url,URL(string: "http://localhost:8080/me#test"))
+  }
     
   func testAuthRouter() {
     XCTAssertEqual(Router<Auth>(at: .signIn).url, URL(string: "https://auth.server.com:8080/api/new/signIn"))
