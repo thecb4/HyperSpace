@@ -54,6 +54,7 @@ public protocol RouteType {
   var route: URL.Route { get }
   var method: URL.Method { get }
   var headers: [Header] { get }
+  var request: URLRequest { get }
 }
 
 public protocol EnvironmentType: URLRepresentable {
