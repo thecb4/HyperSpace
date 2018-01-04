@@ -86,7 +86,7 @@
 		E97513F91FF89CD40088E1AA /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		E97513FB1FF89D600088E1AA /* TestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMethod.swift; sourceTree = "<group>"; };
 		"HyperSpace::HyperSpace::Product" /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HyperSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HyperSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* HyperSpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpaceTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* HyperSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpace.swift; sourceTree = "<group>"; };
@@ -344,6 +344,7 @@
 		OBJ_24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -362,6 +363,7 @@
 		OBJ_25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
