@@ -66,7 +66,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
     return request
   }
   
-  public func decodeJSON<T: Decodable>(_ type: T.Type, with session: URLSession = URLSession.shared) -> T? {
+  public func decodeJSON<T: Decodable>(with session: URLSession = URLSession.shared) -> T? {
 
     var result:T?
     
@@ -81,10 +81,10 @@ public struct Router<T: EndpointType>: URLRepresentable {
         print(httpResponse)
         
         if HyperSpace.debug {
-          result = try? JSONDecoder().decode(type, from: self.route.mockResponseData)
+          result = try? JSONDecoder().decode(T.self, from: self.route.mockResponseData)
         } else {
           guard let data = data else { return }
-          result = try? JSONDecoder().decode(type, from: data)
+          result = try? JSONDecoder().decode(T.self, from: data)
         }
 
       }

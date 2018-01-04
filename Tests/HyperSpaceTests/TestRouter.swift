@@ -165,7 +165,7 @@ class TestRouter: XCTestCase {
     XCTAssertEqual(request.url,URL(string: "http://localhost:8080/me#test"))
     XCTAssertNil(Router<Api>(at: .me).route.body)
     
-    guard let actual   = Router<Api>(.test, at: .auth).decodeJSON(SignIn.self) else {
+    guard let actual: SignIn   = Router<Api>(.test, at: .auth).decodeJSON() else {
       XCTAssertNil(nil)
       return
       
