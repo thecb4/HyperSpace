@@ -61,9 +61,21 @@ struct Api: EndpointType {
       }
     }
     
+    var mockResponseData: Data {
+      switch self {
+      case .auth:
+        return "{\"status\": \"success\"}".data(using: String.Encoding.utf8)!
+      case .me:
+        return "{\"status\": \"failure\"}".data(using: String.Encoding.utf8)!
+      case .posts:
+        return "{ \"data\": [ {\"first\":\"good\"},{\"second\":\"bad\"} ] }".data(using: String.Encoding.utf8)!
+      }
+    }
+    
   }
   
   static let current: Environment = .localhost
+  
 }
 
 struct Auth: EndpointType {
@@ -101,6 +113,16 @@ struct Auth: EndpointType {
       }
     }
     
+    var mockResponseData: Data {
+      switch self {
+        case .signIn:
+          return "{\"status\": \"success\"}".data(using: String.Encoding.utf8)!
+        case .signOut:
+          return "{\"status\": \"failure\"}".data(using: String.Encoding.utf8)!
+      }
+    }
+    
+    
 //    var request: URLRequest {
 //      switch self {
 //      case .signIn:
@@ -113,24 +135,51 @@ struct Auth: EndpointType {
   static let current = URL.Env(.https, "auth.server.com", 8080).at("api", "new")
 }
 
+struct SignIn: Codable {
+  let status: String
+}
+
+struct SignOut: Codable {
+  let status: String
+}
+
+extension SignIn: Equatable {
+  public static func == (lhs: SignIn, rhs: SignIn) -> Bool {
+    return lhs.status == rhs.status
+  }
+}
+
 class TestRouter: XCTestCase {
     
   func testApiRouter() {
+    
+    HyperSpace.debug = true
+    
     XCTAssertEqual(Router<Api>(at: .me).url, URL(string: "http://localhost:8080/me#test"))
     XCTAssertEqual(Router<Api>(.test, at: .auth).url, URL(string: "http://126.251.20.32/auth"))
     XCTAssertEqual(Router<Api>(.production, at: .posts(for: "12.04.2017")).url, URL(string: "https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId"))
     
-    XCTAssertEqual(Router<Api>(at: .me).request.url,URL(string: "http://localhost:8080/me#test"))
+    XCTAssertEqual(Router<Api>(at: .me).request().url,URL(string: "http://localhost:8080/me#test"))
     
     let request = Router<Api>(at: .me).request(with: .useProtocolCachePolicy, timeoutInterval: 500)
     XCTAssertEqual(request.url,URL(string: "http://localhost:8080/me#test"))
     XCTAssertNil(Router<Api>(at: .me).route.body)
+    
+    guard let actual   = Router<Api>(.test, at: .auth).decodeJSON(SignIn.self) else {
+      XCTAssertNil(nil)
+      return
+      
+    }
+    let expected = SignIn(status: "success")
+    
+    XCTAssertEqual(actual,expected)
+    
   }
     
   func testAuthRouter() {
     XCTAssertEqual(Router<Auth>(at: .signIn).url, URL(string: "https://auth.server.com:8080/api/new/signIn"))
     XCTAssertEqual(Router<Auth>(at: .signOut).url, URL(string: "https://auth.server.com:8080/api/new/me/signOut"))
-    XCTAssertEqual(Router<Auth>(at: .signIn).request.url,URL(string: "https://auth.server.com:8080/api/new/signIn"))
+    XCTAssertEqual(Router<Auth>(at: .signIn).request().url,URL(string: "https://auth.server.com:8080/api/new/signIn"))
     
     let request = Router<Auth>(at: .signIn).request(with: .useProtocolCachePolicy, timeoutInterval: 500)
     XCTAssertEqual(request.url,URL(string: "https://auth.server.com:8080/api/new/signIn"))

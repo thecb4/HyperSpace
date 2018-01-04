@@ -11,6 +11,7 @@ import Foundation
 public typealias Header = (field:String, value:String)
 
 public struct Router<T: EndpointType>: URLRepresentable {
+  
   public let environment: T.Environment
   public let route: T.Route
   
@@ -30,23 +31,23 @@ public struct Router<T: EndpointType>: URLRepresentable {
       return components
   }
   
-  public var request: URLRequest {
-    let url     = self.url
-    let method  = self.route.method
-    let headers = self.route.headers
-    var request = URLRequest(url: url)
-    
-    request.httpMethod = method.rawValue
-    
-    for header in headers {
-      request.addValue(header.value, forHTTPHeaderField: header.field)
-    }
-
-    return request
-
-  }
+//  public var request: URLRequest {
+//    let url     = self.url
+//    let method  = self.route.method
+//    let headers = self.route.headers
+//    var request = URLRequest(url: url)
+//    
+//    request.httpMethod = method.rawValue
+//    
+//    for header in headers {
+//      request.addValue(header.value, forHTTPHeaderField: header.field)
+//    }
+//
+//    return request
+//
+//  }
   
-  public func request(with cachePolicy:URLRequest.CachePolicy, timeoutInterval: TimeInterval ) -> URLRequest {
+  public func request(with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 500) -> URLRequest {
     let url     = self.url
     let method  = self.route.method
     let headers = self.route.headers
@@ -64,6 +65,35 @@ public struct Router<T: EndpointType>: URLRepresentable {
     
     return request
   }
+  
+  public func decodeJSON<T: Decodable>(_ type: T.Type, with session: URLSession = URLSession.shared) -> T? {
+
+    var result:T?
+    
+    let _ = session.sendSynchronousRequest(with:self.request()) {
+      
+      (data, response, error) -> Void in
+      
+      if (error != nil) {
+        print(error!)
+      } else {
+        let httpResponse = response as! HTTPURLResponse
+        print(httpResponse)
+        
+        if HyperSpace.debug {
+          result = try? JSONDecoder().decode(type, from: self.route.mockResponseData)
+        } else {
+          guard let data = data else { return }
+          result = try? JSONDecoder().decode(type, from: data)
+        }
+
+      }
+    }
+
+    return result
+
+  }
+  
 }
 
 public protocol URLRepresentable {
@@ -91,7 +121,8 @@ public protocol RouteType {
   var method: URL.Method { get }
   var headers: [Header] { get }
   var body: Data? { get }
-
+  var mockResponseData: Data { get }
+  
 }
 
 public protocol EnvironmentType: URLRepresentable {

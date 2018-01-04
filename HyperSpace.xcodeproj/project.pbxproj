@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E9655EF11FFC15590069B261 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9655EF01FFC15590069B261 /* URLSession.extension.swift */; };
 		E97513E91FF897680088E1AA /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DD1FF896EC0088E1AA /* TestEnvironment.swift */; };
 		E97513EA1FF8976C0088E1AA /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DF1FF896EC0088E1AA /* TestIP.swift */; };
 		E97513EB1FF8976F0088E1AA /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513E11FF896EC0088E1AA /* TestQuery.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9655EF01FFC15590069B261 /* URLSession.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.extension.swift; sourceTree = "<group>"; };
 		E97513C71FF88A360088E1AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E97513C81FF88C710088E1AA /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		E97513C91FF896950088E1AA /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
@@ -143,7 +145,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				E97513C81FF88C710088E1AA /* .travis.yml */,
@@ -153,7 +155,6 @@
 				OBJ_10 /* Tests */,
 				OBJ_13 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -178,6 +179,7 @@
 				E97513CB1FF896950088E1AA /* Scheme.swift */,
 				E97513F91FF89CD40088E1AA /* Method.swift */,
 				OBJ_9 /* HyperSpace.swift */,
+				E9655EF01FFC15590069B261 /* URLSession.extension.swift */,
 			);
 			name = HyperSpace;
 			path = Sources/HyperSpace;
@@ -248,7 +250,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -293,6 +295,7 @@
 				E97513F21FF8981A0088E1AA /* IP.swift in Sources */,
 				E97513F51FF8981A0088E1AA /* Query.swift in Sources */,
 				E97513F11FF8981A0088E1AA /* Host.swift in Sources */,
+				E9655EF11FFC15590069B261 /* URLSession.extension.swift in Sources */,
 				OBJ_36 /* HyperSpace.swift in Sources */,
 				E97513F81FF8981A0088E1AA /* Scheme.swift in Sources */,
 				E97513F71FF8981A0088E1AA /* Router.swift in Sources */,
