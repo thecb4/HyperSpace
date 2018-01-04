@@ -70,23 +70,26 @@ public struct Router<T: EndpointType>: URLRepresentable {
 
     var result:T?
     
-    let _ = session.sendSynchronousRequest(with:self.request()) {
+    if HyperSpace.debug {
       
-      (data, response, error) -> Void in
+      result = try? JSONDecoder().decode(T.self, from: self.route.mockResponseData)
       
-      if (error != nil) {
-        print(error!)
-      } else {
-        let httpResponse = response as! HTTPURLResponse
-        print(httpResponse)
+    } else {
+    
+      let _ = session.sendSynchronousRequest(with:self.request()) {
         
-        if HyperSpace.debug {
-          result = try? JSONDecoder().decode(T.self, from: self.route.mockResponseData)
+        (data, response, error) -> Void in
+        
+        if (error != nil) {
+          print(error!)
         } else {
+          let httpResponse = response as! HTTPURLResponse
+          print(httpResponse)
+          
           guard let data = data else { return }
           result = try? JSONDecoder().decode(T.self, from: data)
-        }
 
+        }
       }
     }
 
