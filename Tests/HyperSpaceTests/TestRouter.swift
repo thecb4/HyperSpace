@@ -47,7 +47,7 @@ struct Api: EndpointType {
       }
     }
     
-    var headers: [Header] {
+    var headers: [HTTPHeader] {
       switch self {
       case .auth, .me, .posts:
         return []
@@ -98,10 +98,12 @@ struct Auth: EndpointType {
       }
     }
     
-    var headers: [Header] {
+    var headers: [HTTPHeader] {
       switch self {
       case .signIn, .signOut:
-        return [Header(field:"Content-Type",value:"application/json")]
+        return [
+          HTTPHeader(field:"Content-Type",value:"application/json")
+        ]
       }
     }
     

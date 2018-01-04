@@ -8,7 +8,15 @@
 
 import Foundation
 
-public typealias Header = (field:String, value:String)
+public struct HTTPHeader {
+  let field:String
+  let value:String
+  
+  public init(field: String, value: String) {
+    self.field = field
+    self.value = value
+  }
+}
 
 public struct Router<T: EndpointType>: URLRepresentable {
   
@@ -122,7 +130,7 @@ public protocol EndpointType {
 public protocol RouteType {
   var route: URL.Route { get }
   var method: URL.Method { get }
-  var headers: [Header] { get }
+  var headers: [HTTPHeader] { get }
   var body: Data? { get }
   var mockResponseData: Data { get }
   
