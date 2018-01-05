@@ -74,6 +74,35 @@ public struct Router<T: EndpointType>: URLRepresentable {
     return request
   }
   
+  public func statusCodeOnly(with session: URLSession = URLSession.shared) -> Int {
+    
+    var statusCode: Int = 0
+    
+    if HyperSpace.debug {
+      
+      statusCode = 0
+      
+    } else {
+      
+      let _ = session.sendSynchronousRequest(with:self.request()) {
+        
+        (data, response, error) -> Void in
+        
+        if (error != nil) {
+          print(error!)
+        } else {
+          let httpResponse = response as! HTTPURLResponse
+          print(httpResponse)
+          
+          statusCode = httpResponse.statusCode
+          
+        }
+      }
+    }
+    
+    return statusCode
+  }
+  
   public func decodeJSON<T: Decodable>(with session: URLSession = URLSession.shared) -> T? {
 
     var result:T?
