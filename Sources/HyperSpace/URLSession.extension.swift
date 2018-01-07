@@ -7,6 +7,12 @@
 
 import Foundation
 
+#if os(Linux)
+  import Glibc
+  import Dispatch
+#endif
+
+
 extension URLSession {
   
   func sendSynchronousRequest(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
