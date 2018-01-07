@@ -134,6 +134,36 @@ public struct Router<T: EndpointType>: URLRepresentable {
 
   }
   
+  public func stringResult(with session: URLSession = URLSession.shared) -> String {
+  
+    var result = ""
+  
+    if HyperSpace.debug {
+  
+      result = ""
+  
+    } else {
+  
+    let _ = session.sendSynchronousRequest(with:self.request()) {
+  
+      (data, response, error) -> Void in
+  
+      if (error != nil) {
+        print(error!)
+      } else {
+        let httpResponse = response as! HTTPURLResponse
+        print(httpResponse)
+  
+        guard let data = data else { return }
+        result = String(data: data, encoding: .utf8)!
+  
+        }
+      }
+    }
+  
+    return result
+  }
+  
 }
 
 public protocol URLRepresentable {
