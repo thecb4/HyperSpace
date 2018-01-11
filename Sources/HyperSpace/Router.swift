@@ -74,7 +74,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
     return request
   }
   
-  public func statusCodeOnly(with session: URLSession = URLSession.shared) -> Int {
+  public func statusCodeOnly(with session: URLSession = URLSession.shared) -> HTTPStatusCode {
     
     var statusCode: Int = 0
     
@@ -100,7 +100,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
       }
     }
     
-    return statusCode
+    return HTTPStatusCode(statusCode)
   }
   
   public func decodeJSON<T: Decodable>(with session: URLSession = URLSession.shared) -> T? {
