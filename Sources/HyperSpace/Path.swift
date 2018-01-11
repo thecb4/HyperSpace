@@ -72,7 +72,7 @@ extension String: RoutePathComponent {
 
 extension Int: RoutePathComponent {
   public var stringValue: String {
-    return self.stringValue
+    return self.description
   }
 }
 
