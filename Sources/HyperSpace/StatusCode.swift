@@ -22,14 +22,14 @@ public struct HTTPStatusCode: OptionSet {
   }
   
   // 2xx Success
-  static let ok       = HTTPStatusCode(200)
-  static let created  = HTTPStatusCode(201)
-  static let accepted = HTTPStatusCode(202)
-  static let success  = [ok, created, accepted]
+  public static let ok       = HTTPStatusCode(200)
+  public static let created  = HTTPStatusCode(201)
+  public static let accepted = HTTPStatusCode(202)
+  public static let success  = [ok, created, accepted]
   
   // 4xx Client Error
-  static let badRequest   = HTTPStatusCode(400)
-  static let unauthorized = HTTPStatusCode(401)
+  public static let badRequest   = HTTPStatusCode(400)
+  public static let unauthorized = HTTPStatusCode(401)
   
   
   
