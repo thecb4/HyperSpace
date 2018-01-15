@@ -39,21 +39,27 @@ public struct Router<T: EndpointType>: URLRepresentable {
       return components
   }
   
-//  public var request: URLRequest {
-//    let url     = self.url
-//    let method  = self.route.method
-//    let headers = self.route.headers
-//    var request = URLRequest(url: url)
-//    
-//    request.httpMethod = method.rawValue
-//    
-//    for header in headers {
-//      request.addValue(header.value, forHTTPHeaderField: header.field)
-//    }
-//
-//    return request
-//
-//  }
+  public func resolve(with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 500, `for` session: URLSession = URLSession.shared) -> EndPointResult {
+    
+    let request = self.request()
+    
+    var _response: URLResponse?
+    var _data: Data?
+    var _error: Error?
+    
+    let _ = session.sendSynchronousRequest(with:request) {
+      
+      (data, response, error) -> Void in
+      
+        _response = response
+        _data     = data
+        _error    = error
+    
+    }
+    
+    return EndPointResult(response:_response, data:_data, error:_error)
+    
+  }
   
   public func request(with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 500) -> URLRequest {
     let url     = self.url
@@ -74,6 +80,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
     return request
   }
   
+  @available(*, deprecated, message: "use resolve: instead")
   public func statusCodeOnly(with session: URLSession = URLSession.shared) -> HTTPStatusCode {
     
     var statusCode: Int = 0
@@ -103,6 +110,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
     return HTTPStatusCode(statusCode)
   }
   
+  @available(*, deprecated, message:"use resolve: instead")
   public func decodeJSON<T: Decodable>(with session: URLSession = URLSession.shared) -> T? {
 
     var result:T?
@@ -134,6 +142,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
 
   }
   
+  @available(*, deprecated, message: "use resolve: instead")
   public func stringResult(with session: URLSession = URLSession.shared) -> String {
   
     var result = ""
