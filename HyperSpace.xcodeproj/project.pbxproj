@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"HyperSpace::HyperSpacePackageTests::ProductTarget" /* HyperSpacePackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_39 /* Build configuration list for PBXAggregateTarget "HyperSpacePackageTests" */;
+			buildConfigurationList = OBJ_180 /* Build configuration list for PBXAggregateTarget "HyperSpacePackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_42 /* PBXTargetDependency */,
+				OBJ_183 /* PBXTargetDependency */,
 			);
 			name = HyperSpacePackageTests;
 			productName = HyperSpacePackageTests;
@@ -21,41 +21,108 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		E93A64622006F67B00221DF5 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A64612006F67B00221DF5 /* StatusCode.swift */; };
-		E9655EF11FFC15590069B261 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9655EF01FFC15590069B261 /* URLSession.extension.swift */; };
-		E97513E91FF897680088E1AA /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DD1FF896EC0088E1AA /* TestEnvironment.swift */; };
-		E97513EA1FF8976C0088E1AA /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DF1FF896EC0088E1AA /* TestIP.swift */; };
-		E97513EB1FF8976F0088E1AA /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513E11FF896EC0088E1AA /* TestQuery.swift */; };
-		E97513EC1FF897730088E1AA /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513E01FF896EC0088E1AA /* TestRoute.swift */; };
-		E97513ED1FF897760088E1AA /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DB1FF896EC0088E1AA /* TestRoutePath.swift */; };
-		E97513EE1FF8977B0088E1AA /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DE1FF896EC0088E1AA /* TestRouter.swift */; };
-		E97513EF1FF8977F0088E1AA /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513DC1FF896EC0088E1AA /* TestScheme.swift */; };
-		E97513F01FF8981A0088E1AA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513D01FF896950088E1AA /* Environment.swift */; };
-		E97513F11FF8981A0088E1AA /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513D11FF896950088E1AA /* Host.swift */; };
-		E97513F21FF8981A0088E1AA /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CF1FF896950088E1AA /* IP.swift */; };
-		E97513F31FF8981A0088E1AA /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CA1FF896950088E1AA /* IPv6.swift */; };
-		E97513F41FF8981A0088E1AA /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CD1FF896950088E1AA /* Path.swift */; };
-		E97513F51FF8981A0088E1AA /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CE1FF896950088E1AA /* Query.swift */; };
-		E97513F61FF8981A0088E1AA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513C91FF896950088E1AA /* Route.swift */; };
-		E97513F71FF8981A0088E1AA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CC1FF896950088E1AA /* Router.swift */; };
-		E97513F81FF8981A0088E1AA /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513CB1FF896950088E1AA /* Scheme.swift */; };
-		E97513FA1FF89CD40088E1AA /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513F91FF89CD40088E1AA /* Method.swift */; };
-		E97513FC1FF89D600088E1AA /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97513FB1FF89D600088E1AA /* TestMethod.swift */; };
-		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_27 /* HyperSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HyperSpaceTests.swift */; };
-		OBJ_29 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HyperSpace::HyperSpace::Product" /* HyperSpace.framework */; };
-		OBJ_36 /* HyperSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* HyperSpace.swift */; };
+		E93A64A6200CD40700221DF5 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A64A5200CD40700221DF5 /* RouterError.swift */; };
+		E93A64A8200CD7CE00221DF5 /* EndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A64A7200CD7CE00221DF5 /* EndPointResult.swift */; };
+		E93A64AA200CECDD00221DF5 /* TestEndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A64A9200CECDD00221DF5 /* TestEndPointResult.swift */; };
+		OBJ_100 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* TestIP.swift */; };
+		OBJ_101 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* TestMethod.swift */; };
+		OBJ_102 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* TestQuery.swift */; };
+		OBJ_103 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* TestRoute.swift */; };
+		OBJ_104 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* TestRoutePath.swift */; };
+		OBJ_105 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* TestRouter.swift */; };
+		OBJ_106 /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* TestScheme.swift */; };
+		OBJ_108 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HyperSpace::HyperSpace::Product" /* HyperSpace.framework */; };
+		OBJ_109 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
+		OBJ_110 /* then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "then::then::Product" /* then.framework */; };
+		OBJ_121 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Environment.swift */; };
+		OBJ_122 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Host.swift */; };
+		OBJ_123 /* HyperSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* HyperSpace.swift */; };
+		OBJ_124 /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* IP.swift */; };
+		OBJ_125 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* IPv6.swift */; };
+		OBJ_126 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Method.swift */; };
+		OBJ_127 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Path.swift */; };
+		OBJ_128 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Query.swift */; };
+		OBJ_129 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Route.swift */; };
+		OBJ_130 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Router.swift */; };
+		OBJ_131 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Scheme.swift */; };
+		OBJ_132 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* StatusCode.swift */; };
+		OBJ_133 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* URLSession.extension.swift */; };
+		OBJ_135 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
+		OBJ_136 /* then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "then::then::Product" /* then.framework */; };
+		OBJ_143 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* AnyError.swift */; };
+		OBJ_144 /* NoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* NoError.swift */; };
+		OBJ_145 /* Result.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Result.ext.swift */; };
+		OBJ_146 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Result.swift */; };
+		OBJ_147 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* ResultProtocol.swift */; };
+		OBJ_153 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Async.swift */; };
+		OBJ_154 /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Await.swift */; };
+		OBJ_155 /* Promise+Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Promise+Aliases.swift */; };
+		OBJ_156 /* Promise+BridgeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Promise+BridgeError.swift */; };
+		OBJ_157 /* Promise+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Promise+Chain.swift */; };
+		OBJ_158 /* Promise+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Promise+Delay.swift */; };
+		OBJ_159 /* Promise+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Promise+Error.swift */; };
+		OBJ_160 /* Promise+Finally.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Promise+Finally.swift */; };
+		OBJ_161 /* Promise+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Promise+Helpers.swift */; };
+		OBJ_162 /* Promise+NoMatterWhat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Promise+NoMatterWhat.swift */; };
+		OBJ_163 /* Promise+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Promise+Progress.swift */; };
+		OBJ_164 /* Promise+Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Promise+Race.swift */; };
+		OBJ_165 /* Promise+Recover.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Promise+Recover.swift */; };
+		OBJ_166 /* Promise+Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Promise+Retry.swift */; };
+		OBJ_167 /* Promise+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Promise+Then.swift */; };
+		OBJ_168 /* Promise+Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Promise+Timeout.swift */; };
+		OBJ_169 /* Promise+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Promise+Unwrap.swift */; };
+		OBJ_170 /* Promise+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Promise+Validate.swift */; };
+		OBJ_171 /* Promise+Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Promise+Zip.swift */; };
+		OBJ_172 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Promise.swift */; };
+		OBJ_173 /* PromiseBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* PromiseBlocks.swift */; };
+		OBJ_174 /* PromiseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* PromiseError.swift */; };
+		OBJ_175 /* PromiseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* PromiseState.swift */; };
+		OBJ_176 /* VoidPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* VoidPromise.swift */; };
+		OBJ_177 /* WhenAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* WhenAll.swift */; };
+		OBJ_80 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_86 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Package.swift */; };
+		OBJ_92 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* Package.swift */; };
+		OBJ_98 /* HyperSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* HyperSpaceTests.swift */; };
+		OBJ_99 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* TestEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E97513C51FF88A200088E1AA /* PBXContainerItemProxy */ = {
+		E93A649F200CD3A100221DF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Result::Result";
+			remoteInfo = Result;
+		};
+		E93A64A0200CD3A100221DF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "then::then";
+			remoteInfo = then;
+		};
+		E93A64A1200CD3A100221DF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "HyperSpace::HyperSpace";
 			remoteInfo = HyperSpace;
 		};
-		E97513C61FF88A210088E1AA /* PBXContainerItemProxy */ = {
+		E93A64A2200CD3A100221DF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Result::Result";
+			remoteInfo = Result;
+		};
+		E93A64A3200CD3A100221DF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "then::then";
+			remoteInfo = then;
+		};
+		E93A64A4200CD3A100221DF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -65,45 +132,99 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E93A64612006F67B00221DF5 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
-		E9655EF01FFC15590069B261 /* URLSession.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.extension.swift; sourceTree = "<group>"; };
-		E97513C71FF88A360088E1AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E97513C81FF88C710088E1AA /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		E97513C91FF896950088E1AA /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		E97513CA1FF896950088E1AA /* IPv6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPv6.swift; sourceTree = "<group>"; };
-		E97513CB1FF896950088E1AA /* Scheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
-		E97513CC1FF896950088E1AA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		E97513CD1FF896950088E1AA /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		E97513CE1FF896950088E1AA /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
-		E97513CF1FF896950088E1AA /* IP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IP.swift; sourceTree = "<group>"; };
-		E97513D01FF896950088E1AA /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		E97513D11FF896950088E1AA /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
-		E97513DB1FF896EC0088E1AA /* TestRoutePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRoutePath.swift; sourceTree = "<group>"; };
-		E97513DC1FF896EC0088E1AA /* TestScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScheme.swift; sourceTree = "<group>"; };
-		E97513DD1FF896EC0088E1AA /* TestEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
-		E97513DE1FF896EC0088E1AA /* TestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
-		E97513DF1FF896EC0088E1AA /* TestIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestIP.swift; sourceTree = "<group>"; };
-		E97513E01FF896EC0088E1AA /* TestRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRoute.swift; sourceTree = "<group>"; };
-		E97513E11FF896EC0088E1AA /* TestQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestQuery.swift; sourceTree = "<group>"; };
-		E97513F91FF89CD40088E1AA /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
-		E97513FB1FF89D600088E1AA /* TestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMethod.swift; sourceTree = "<group>"; };
+		E93A64A5200CD40700221DF5 /* RouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterError.swift; sourceTree = "<group>"; };
+		E93A64A7200CD7CE00221DF5 /* EndPointResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointResult.swift; sourceTree = "<group>"; };
+		E93A64A9200CECDD00221DF5 /* TestEndPointResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEndPointResult.swift; sourceTree = "<group>"; };
+		E93A64AB200CFE4A00221DF5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		"HyperSpace::HyperSpace::Product" /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HyperSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* HyperSpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpaceTests.swift; sourceTree = "<group>"; };
+		"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HyperSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		OBJ_11 /* HyperSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpace.swift; sourceTree = "<group>"; };
+		OBJ_12 /* IP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IP.swift; sourceTree = "<group>"; };
+		OBJ_13 /* IPv6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPv6.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		OBJ_15 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		OBJ_19 /* Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
+		OBJ_20 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		OBJ_21 /* URLSession.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.extension.swift; sourceTree = "<group>"; };
+		OBJ_24 /* HyperSpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpaceTests.swift; sourceTree = "<group>"; };
+		OBJ_25 /* TestEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
+		OBJ_26 /* TestIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIP.swift; sourceTree = "<group>"; };
+		OBJ_27 /* TestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMethod.swift; sourceTree = "<group>"; };
+		OBJ_28 /* TestQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuery.swift; sourceTree = "<group>"; };
+		OBJ_29 /* TestRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRoute.swift; sourceTree = "<group>"; };
+		OBJ_30 /* TestRoutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRoutePath.swift; sourceTree = "<group>"; };
+		OBJ_31 /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
+		OBJ_32 /* TestScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScheme.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/cavellebenjamin/Development/apps/HyperSpace/.build/checkouts/then.git--569073275694509842/Package.swift"; sourceTree = "<group>"; };
+		OBJ_37 /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		OBJ_38 /* Await.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Await.swift; sourceTree = "<group>"; };
+		OBJ_39 /* Promise+Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Aliases.swift"; sourceTree = "<group>"; };
+		OBJ_40 /* Promise+BridgeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+BridgeError.swift"; sourceTree = "<group>"; };
+		OBJ_41 /* Promise+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Chain.swift"; sourceTree = "<group>"; };
+		OBJ_42 /* Promise+Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Delay.swift"; sourceTree = "<group>"; };
+		OBJ_43 /* Promise+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Error.swift"; sourceTree = "<group>"; };
+		OBJ_44 /* Promise+Finally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Finally.swift"; sourceTree = "<group>"; };
+		OBJ_45 /* Promise+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Helpers.swift"; sourceTree = "<group>"; };
+		OBJ_46 /* Promise+NoMatterWhat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+NoMatterWhat.swift"; sourceTree = "<group>"; };
+		OBJ_47 /* Promise+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Progress.swift"; sourceTree = "<group>"; };
+		OBJ_48 /* Promise+Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Race.swift"; sourceTree = "<group>"; };
+		OBJ_49 /* Promise+Recover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Recover.swift"; sourceTree = "<group>"; };
+		OBJ_50 /* Promise+Retry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Retry.swift"; sourceTree = "<group>"; };
+		OBJ_51 /* Promise+Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Then.swift"; sourceTree = "<group>"; };
+		OBJ_52 /* Promise+Timeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Timeout.swift"; sourceTree = "<group>"; };
+		OBJ_53 /* Promise+Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Unwrap.swift"; sourceTree = "<group>"; };
+		OBJ_54 /* Promise+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Validate.swift"; sourceTree = "<group>"; };
+		OBJ_55 /* Promise+Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Zip.swift"; sourceTree = "<group>"; };
+		OBJ_56 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		OBJ_57 /* PromiseBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseBlocks.swift; sourceTree = "<group>"; };
+		OBJ_58 /* PromiseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseError.swift; sourceTree = "<group>"; };
+		OBJ_59 /* PromiseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseState.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* HyperSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpace.swift; sourceTree = "<group>"; };
+		OBJ_60 /* VoidPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidPromise.swift; sourceTree = "<group>"; };
+		OBJ_61 /* WhenAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhenAll.swift; sourceTree = "<group>"; };
+		OBJ_64 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
+		OBJ_65 /* NoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoError.swift; sourceTree = "<group>"; };
+		OBJ_66 /* Result.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.ext.swift; sourceTree = "<group>"; };
+		OBJ_67 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_68 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
+		OBJ_69 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/cavellebenjamin/Development/apps/HyperSpace/.build/checkouts/Result.git--3192226916450554167/Package.swift"; sourceTree = "<group>"; };
+		OBJ_9 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		"Result::Result::Product" /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"then::then::Product" /* then.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = then.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_28 /* Frameworks */ = {
+		OBJ_107 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_29 /* HyperSpace.framework in Frameworks */,
+				OBJ_108 /* HyperSpace.framework in Frameworks */,
+				OBJ_109 /* Result.framework in Frameworks */,
+				OBJ_110 /* then.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_37 /* Frameworks */ = {
+		OBJ_134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_135 /* Result.framework in Frameworks */,
+				OBJ_136 /* then.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_178 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -113,51 +234,108 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* Tests */ = {
+		OBJ_22 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* HyperSpaceTests */,
+				OBJ_23 /* HyperSpaceTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_11 /* HyperSpaceTests */ = {
+		OBJ_23 /* HyperSpaceTests */ = {
 			isa = PBXGroup;
 			children = (
-				E97513DD1FF896EC0088E1AA /* TestEnvironment.swift */,
-				E97513DF1FF896EC0088E1AA /* TestIP.swift */,
-				E97513E11FF896EC0088E1AA /* TestQuery.swift */,
-				E97513E01FF896EC0088E1AA /* TestRoute.swift */,
-				E97513DB1FF896EC0088E1AA /* TestRoutePath.swift */,
-				E97513DE1FF896EC0088E1AA /* TestRouter.swift */,
-				E97513DC1FF896EC0088E1AA /* TestScheme.swift */,
-				E97513FB1FF89D600088E1AA /* TestMethod.swift */,
-				OBJ_12 /* HyperSpaceTests.swift */,
+				OBJ_24 /* HyperSpaceTests.swift */,
+				OBJ_25 /* TestEnvironment.swift */,
+				OBJ_26 /* TestIP.swift */,
+				OBJ_27 /* TestMethod.swift */,
+				OBJ_28 /* TestQuery.swift */,
+				OBJ_29 /* TestRoute.swift */,
+				OBJ_30 /* TestRoutePath.swift */,
+				OBJ_31 /* TestRouter.swift */,
+				OBJ_32 /* TestScheme.swift */,
+				E93A64A9200CECDD00221DF5 /* TestEndPointResult.swift */,
 			);
 			name = HyperSpaceTests;
 			path = Tests/HyperSpaceTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_13 /* Products */ = {
+		OBJ_34 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */,
-				"HyperSpace::HyperSpace::Product" /* HyperSpace.framework */,
+				OBJ_35 /* then 3.0.2 */,
+				OBJ_62 /* Result 0.1.2 */,
 			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_35 /* then 3.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* Package.swift */,
+				OBJ_37 /* Async.swift */,
+				OBJ_38 /* Await.swift */,
+				OBJ_39 /* Promise+Aliases.swift */,
+				OBJ_40 /* Promise+BridgeError.swift */,
+				OBJ_41 /* Promise+Chain.swift */,
+				OBJ_42 /* Promise+Delay.swift */,
+				OBJ_43 /* Promise+Error.swift */,
+				OBJ_44 /* Promise+Finally.swift */,
+				OBJ_45 /* Promise+Helpers.swift */,
+				OBJ_46 /* Promise+NoMatterWhat.swift */,
+				OBJ_47 /* Promise+Progress.swift */,
+				OBJ_48 /* Promise+Race.swift */,
+				OBJ_49 /* Promise+Recover.swift */,
+				OBJ_50 /* Promise+Retry.swift */,
+				OBJ_51 /* Promise+Then.swift */,
+				OBJ_52 /* Promise+Timeout.swift */,
+				OBJ_53 /* Promise+Unwrap.swift */,
+				OBJ_54 /* Promise+Validate.swift */,
+				OBJ_55 /* Promise+Zip.swift */,
+				OBJ_56 /* Promise.swift */,
+				OBJ_57 /* PromiseBlocks.swift */,
+				OBJ_58 /* PromiseError.swift */,
+				OBJ_59 /* PromiseState.swift */,
+				OBJ_60 /* VoidPromise.swift */,
+				OBJ_61 /* WhenAll.swift */,
+			);
+			name = "then 3.0.2";
+			path = ".build/checkouts/then.git--569073275694509842/Source";
+			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
-				E97513C81FF88C710088E1AA /* .travis.yml */,
-				E97513C71FF88A360088E1AA /* README.md */,
+				E93A64AB200CFE4A00221DF5 /* README.md */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_10 /* Tests */,
-				OBJ_13 /* Products */,
+				OBJ_22 /* Tests */,
+				OBJ_34 /* Dependencies */,
+				OBJ_70 /* Products */,
 			);
 			sourceTree = "<group>";
+		};
+		OBJ_62 /* Result 0.1.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_63 /* Result */,
+				OBJ_69 /* Package.swift */,
+			);
+			name = "Result 0.1.2";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_63 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_64 /* AnyError.swift */,
+				OBJ_65 /* NoError.swift */,
+				OBJ_66 /* Result.ext.swift */,
+				OBJ_67 /* Result.swift */,
+				OBJ_68 /* ResultProtocol.swift */,
+			);
+			name = Result;
+			path = ".build/checkouts/Result.git--3192226916450554167/Sources/Result";
+			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
@@ -167,22 +345,35 @@
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
+		OBJ_70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */,
+				"HyperSpace::HyperSpace::Product" /* HyperSpace.framework */,
+				"Result::Result::Product" /* Result.framework */,
+				"then::then::Product" /* then.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		OBJ_8 /* HyperSpace */ = {
 			isa = PBXGroup;
 			children = (
-				E97513D01FF896950088E1AA /* Environment.swift */,
-				E97513D11FF896950088E1AA /* Host.swift */,
-				E97513CF1FF896950088E1AA /* IP.swift */,
-				E97513CA1FF896950088E1AA /* IPv6.swift */,
-				E97513CD1FF896950088E1AA /* Path.swift */,
-				E97513CE1FF896950088E1AA /* Query.swift */,
-				E97513C91FF896950088E1AA /* Route.swift */,
-				E97513CC1FF896950088E1AA /* Router.swift */,
-				E97513CB1FF896950088E1AA /* Scheme.swift */,
-				E97513F91FF89CD40088E1AA /* Method.swift */,
-				OBJ_9 /* HyperSpace.swift */,
-				E9655EF01FFC15590069B261 /* URLSession.extension.swift */,
-				E93A64612006F67B00221DF5 /* StatusCode.swift */,
+				OBJ_9 /* Environment.swift */,
+				OBJ_10 /* Host.swift */,
+				OBJ_11 /* HyperSpace.swift */,
+				OBJ_12 /* IP.swift */,
+				OBJ_13 /* IPv6.swift */,
+				OBJ_14 /* Method.swift */,
+				OBJ_15 /* Path.swift */,
+				OBJ_16 /* Query.swift */,
+				OBJ_17 /* Route.swift */,
+				OBJ_18 /* Router.swift */,
+				OBJ_19 /* Scheme.swift */,
+				OBJ_20 /* StatusCode.swift */,
+				OBJ_21 /* URLSession.extension.swift */,
+				E93A64A5200CD40700221DF5 /* RouterError.swift */,
+				E93A64A7200CD7CE00221DF5 /* EndPointResult.swift */,
 			);
 			name = HyperSpace;
 			path = Sources/HyperSpace;
@@ -193,14 +384,16 @@
 /* Begin PBXNativeTarget section */
 		"HyperSpace::HyperSpace" /* HyperSpace */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_32 /* Build configuration list for PBXNativeTarget "HyperSpace" */;
+			buildConfigurationList = OBJ_117 /* Build configuration list for PBXNativeTarget "HyperSpace" */;
 			buildPhases = (
-				OBJ_35 /* Sources */,
-				OBJ_37 /* Frameworks */,
+				OBJ_120 /* Sources */,
+				OBJ_134 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				OBJ_137 /* PBXTargetDependency */,
+				OBJ_138 /* PBXTargetDependency */,
 			);
 			name = HyperSpace;
 			productName = HyperSpace;
@@ -209,15 +402,17 @@
 		};
 		"HyperSpace::HyperSpaceTests" /* HyperSpaceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "HyperSpaceTests" */;
+			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "HyperSpaceTests" */;
 			buildPhases = (
-				OBJ_26 /* Sources */,
-				OBJ_28 /* Frameworks */,
+				OBJ_97 /* Sources */,
+				OBJ_107 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_30 /* PBXTargetDependency */,
+				OBJ_111 /* PBXTargetDependency */,
+				OBJ_113 /* PBXTargetDependency */,
+				OBJ_115 /* PBXTargetDependency */,
 			);
 			name = HyperSpaceTests;
 			productName = HyperSpaceTests;
@@ -226,9 +421,9 @@
 		};
 		"HyperSpace::SwiftPMPackageDescription" /* HyperSpacePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_17 /* Build configuration list for PBXNativeTarget "HyperSpacePackageDescription" */;
+			buildConfigurationList = OBJ_76 /* Build configuration list for PBXNativeTarget "HyperSpacePackageDescription" */;
 			buildPhases = (
-				OBJ_20 /* Sources */,
+				OBJ_79 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +431,66 @@
 			);
 			name = HyperSpacePackageDescription;
 			productName = HyperSpacePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Result::Result" /* Result */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_139 /* Build configuration list for PBXNativeTarget "Result" */;
+			buildPhases = (
+				OBJ_142 /* Sources */,
+				OBJ_148 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Result;
+			productName = Result;
+			productReference = "Result::Result::Product" /* Result.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Result::SwiftPMPackageDescription" /* ResultPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_88 /* Build configuration list for PBXNativeTarget "ResultPackageDescription" */;
+			buildPhases = (
+				OBJ_91 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResultPackageDescription;
+			productName = ResultPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"then::SwiftPMPackageDescription" /* thenPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_82 /* Build configuration list for PBXNativeTarget "thenPackageDescription" */;
+			buildPhases = (
+				OBJ_85 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = thenPackageDescription;
+			productName = thenPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"then::then" /* then */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_149 /* Build configuration list for PBXNativeTarget "then" */;
+			buildPhases = (
+				OBJ_152 /* Sources */,
+				OBJ_178 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = then;
+			productName = then;
+			productReference = "then::then::Product" /* then.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -254,132 +509,307 @@
 				en,
 			);
 			mainGroup = OBJ_5;
-			productRefGroup = OBJ_13 /* Products */;
+			productRefGroup = OBJ_70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				"HyperSpace::SwiftPMPackageDescription" /* HyperSpacePackageDescription */,
+				"then::SwiftPMPackageDescription" /* thenPackageDescription */,
+				"Result::SwiftPMPackageDescription" /* ResultPackageDescription */,
 				"HyperSpace::HyperSpaceTests" /* HyperSpaceTests */,
 				"HyperSpace::HyperSpace" /* HyperSpace */,
+				"Result::Result" /* Result */,
+				"then::then" /* then */,
 				"HyperSpace::HyperSpacePackageTests::ProductTarget" /* HyperSpacePackageTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_20 /* Sources */ = {
+		OBJ_120 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_21 /* Package.swift in Sources */,
+				OBJ_121 /* Environment.swift in Sources */,
+				OBJ_122 /* Host.swift in Sources */,
+				OBJ_123 /* HyperSpace.swift in Sources */,
+				OBJ_124 /* IP.swift in Sources */,
+				OBJ_125 /* IPv6.swift in Sources */,
+				OBJ_126 /* Method.swift in Sources */,
+				OBJ_127 /* Path.swift in Sources */,
+				OBJ_128 /* Query.swift in Sources */,
+				E93A64A8200CD7CE00221DF5 /* EndPointResult.swift in Sources */,
+				OBJ_129 /* Route.swift in Sources */,
+				E93A64A6200CD40700221DF5 /* RouterError.swift in Sources */,
+				OBJ_130 /* Router.swift in Sources */,
+				OBJ_131 /* Scheme.swift in Sources */,
+				OBJ_132 /* StatusCode.swift in Sources */,
+				OBJ_133 /* URLSession.extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_26 /* Sources */ = {
+		OBJ_142 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				E97513EF1FF8977F0088E1AA /* TestScheme.swift in Sources */,
-				E97513EB1FF8976F0088E1AA /* TestQuery.swift in Sources */,
-				OBJ_27 /* HyperSpaceTests.swift in Sources */,
-				E97513ED1FF897760088E1AA /* TestRoutePath.swift in Sources */,
-				E97513EA1FF8976C0088E1AA /* TestIP.swift in Sources */,
-				E97513EE1FF8977B0088E1AA /* TestRouter.swift in Sources */,
-				E97513EC1FF897730088E1AA /* TestRoute.swift in Sources */,
-				E97513E91FF897680088E1AA /* TestEnvironment.swift in Sources */,
-				E97513FC1FF89D600088E1AA /* TestMethod.swift in Sources */,
+				OBJ_143 /* AnyError.swift in Sources */,
+				OBJ_144 /* NoError.swift in Sources */,
+				OBJ_145 /* Result.ext.swift in Sources */,
+				OBJ_146 /* Result.swift in Sources */,
+				OBJ_147 /* ResultProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_35 /* Sources */ = {
+		OBJ_152 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				E93A64622006F67B00221DF5 /* StatusCode.swift in Sources */,
-				E97513F21FF8981A0088E1AA /* IP.swift in Sources */,
-				E97513F51FF8981A0088E1AA /* Query.swift in Sources */,
-				E97513F11FF8981A0088E1AA /* Host.swift in Sources */,
-				E9655EF11FFC15590069B261 /* URLSession.extension.swift in Sources */,
-				OBJ_36 /* HyperSpace.swift in Sources */,
-				E97513F81FF8981A0088E1AA /* Scheme.swift in Sources */,
-				E97513F71FF8981A0088E1AA /* Router.swift in Sources */,
-				E97513F31FF8981A0088E1AA /* IPv6.swift in Sources */,
-				E97513F61FF8981A0088E1AA /* Route.swift in Sources */,
-				E97513F41FF8981A0088E1AA /* Path.swift in Sources */,
-				E97513F01FF8981A0088E1AA /* Environment.swift in Sources */,
-				E97513FA1FF89CD40088E1AA /* Method.swift in Sources */,
+				OBJ_153 /* Async.swift in Sources */,
+				OBJ_154 /* Await.swift in Sources */,
+				OBJ_155 /* Promise+Aliases.swift in Sources */,
+				OBJ_156 /* Promise+BridgeError.swift in Sources */,
+				OBJ_157 /* Promise+Chain.swift in Sources */,
+				OBJ_158 /* Promise+Delay.swift in Sources */,
+				OBJ_159 /* Promise+Error.swift in Sources */,
+				OBJ_160 /* Promise+Finally.swift in Sources */,
+				OBJ_161 /* Promise+Helpers.swift in Sources */,
+				OBJ_162 /* Promise+NoMatterWhat.swift in Sources */,
+				OBJ_163 /* Promise+Progress.swift in Sources */,
+				OBJ_164 /* Promise+Race.swift in Sources */,
+				OBJ_165 /* Promise+Recover.swift in Sources */,
+				OBJ_166 /* Promise+Retry.swift in Sources */,
+				OBJ_167 /* Promise+Then.swift in Sources */,
+				OBJ_168 /* Promise+Timeout.swift in Sources */,
+				OBJ_169 /* Promise+Unwrap.swift in Sources */,
+				OBJ_170 /* Promise+Validate.swift in Sources */,
+				OBJ_171 /* Promise+Zip.swift in Sources */,
+				OBJ_172 /* Promise.swift in Sources */,
+				OBJ_173 /* PromiseBlocks.swift in Sources */,
+				OBJ_174 /* PromiseError.swift in Sources */,
+				OBJ_175 /* PromiseState.swift in Sources */,
+				OBJ_176 /* VoidPromise.swift in Sources */,
+				OBJ_177 /* WhenAll.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_80 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_86 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_92 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_98 /* HyperSpaceTests.swift in Sources */,
+				OBJ_99 /* TestEnvironment.swift in Sources */,
+				OBJ_100 /* TestIP.swift in Sources */,
+				OBJ_101 /* TestMethod.swift in Sources */,
+				OBJ_102 /* TestQuery.swift in Sources */,
+				OBJ_103 /* TestRoute.swift in Sources */,
+				OBJ_104 /* TestRoutePath.swift in Sources */,
+				OBJ_105 /* TestRouter.swift in Sources */,
+				OBJ_106 /* TestScheme.swift in Sources */,
+				E93A64AA200CECDD00221DF5 /* TestEndPointResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_30 /* PBXTargetDependency */ = {
+		OBJ_111 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HyperSpace::HyperSpace" /* HyperSpace */;
-			targetProxy = E97513C51FF88A200088E1AA /* PBXContainerItemProxy */;
+			targetProxy = E93A64A1200CD3A100221DF5 /* PBXContainerItemProxy */;
 		};
-		OBJ_42 /* PBXTargetDependency */ = {
+		OBJ_113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Result::Result" /* Result */;
+			targetProxy = E93A64A2200CD3A100221DF5 /* PBXContainerItemProxy */;
+		};
+		OBJ_115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "then::then" /* then */;
+			targetProxy = E93A64A3200CD3A100221DF5 /* PBXContainerItemProxy */;
+		};
+		OBJ_137 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Result::Result" /* Result */;
+			targetProxy = E93A649F200CD3A100221DF5 /* PBXContainerItemProxy */;
+		};
+		OBJ_138 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "then::then" /* then */;
+			targetProxy = E93A64A0200CD3A100221DF5 /* PBXContainerItemProxy */;
+		};
+		OBJ_183 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HyperSpace::HyperSpaceTests" /* HyperSpaceTests */;
-			targetProxy = E97513C61FF88A210088E1AA /* PBXContainerItemProxy */;
+			targetProxy = E93A64A4200CD3A100221DF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_18 /* Debug */ = {
+		OBJ_118 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpace_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HyperSpace;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
+				TARGET_NAME = HyperSpace;
 			};
 			name = Debug;
 		};
-		OBJ_19 /* Release */ = {
+		OBJ_119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpace_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HyperSpace;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
+				TARGET_NAME = HyperSpace;
 			};
 			name = Release;
 		};
-		OBJ_24 /* Debug */ = {
+		OBJ_140 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpaceTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				INFOPLIST_FILE = HyperSpace.xcodeproj/Result_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Result;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = HyperSpaceTests;
+				TARGET_NAME = Result;
 			};
 			name = Debug;
 		};
-		OBJ_25 /* Release */ = {
+		OBJ_141 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpaceTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				INFOPLIST_FILE = HyperSpace.xcodeproj/Result_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Result;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = HyperSpaceTests;
+				TARGET_NAME = Result;
+			};
+			name = Release;
+		};
+		OBJ_150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HyperSpace.xcodeproj/then_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = then;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = then;
+			};
+			name = Debug;
+		};
+		OBJ_151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HyperSpace.xcodeproj/then_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = then;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = then;
+			};
+			name = Release;
+		};
+		OBJ_181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 			};
 			name = Release;
 		};
@@ -405,50 +835,6 @@
 			};
 			name = Debug;
 		};
-		OBJ_33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpace_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = HyperSpace;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = HyperSpace;
-			};
-			name = Debug;
-		};
-		OBJ_34 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpace_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = HyperSpace;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = HyperSpace;
-			};
-			name = Release;
-		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,26 +855,131 @@
 			};
 			name = Release;
 		};
-		OBJ_40 /* Debug */ = {
+		OBJ_77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		OBJ_41 /* Release */ = {
+		OBJ_78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpaceTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = HyperSpaceTests;
+			};
+			name = Debug;
+		};
+		OBJ_96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpaceTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = HyperSpaceTests;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_17 /* Build configuration list for PBXNativeTarget "HyperSpacePackageDescription" */ = {
+		OBJ_117 /* Build configuration list for PBXNativeTarget "HyperSpace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_18 /* Debug */,
-				OBJ_19 /* Release */,
+				OBJ_118 /* Debug */,
+				OBJ_119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_139 /* Build configuration list for PBXNativeTarget "Result" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_140 /* Debug */,
+				OBJ_141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_149 /* Build configuration list for PBXNativeTarget "then" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_150 /* Debug */,
+				OBJ_151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_180 /* Build configuration list for PBXAggregateTarget "HyperSpacePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_181 /* Debug */,
+				OBJ_182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -502,29 +993,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_23 /* Build configuration list for PBXNativeTarget "HyperSpaceTests" */ = {
+		OBJ_76 /* Build configuration list for PBXNativeTarget "HyperSpacePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_24 /* Debug */,
-				OBJ_25 /* Release */,
+				OBJ_77 /* Debug */,
+				OBJ_78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_32 /* Build configuration list for PBXNativeTarget "HyperSpace" */ = {
+		OBJ_82 /* Build configuration list for PBXNativeTarget "thenPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_33 /* Debug */,
-				OBJ_34 /* Release */,
+				OBJ_83 /* Debug */,
+				OBJ_84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_39 /* Build configuration list for PBXAggregateTarget "HyperSpacePackageTests" */ = {
+		OBJ_88 /* Build configuration list for PBXNativeTarget "ResultPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_40 /* Debug */,
-				OBJ_41 /* Release */,
+				OBJ_89 /* Debug */,
+				OBJ_90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_94 /* Build configuration list for PBXNativeTarget "HyperSpaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_95 /* Debug */,
+				OBJ_96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
