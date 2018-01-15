@@ -135,6 +135,7 @@
 		E93A64A5200CD40700221DF5 /* RouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterError.swift; sourceTree = "<group>"; };
 		E93A64A7200CD7CE00221DF5 /* EndPointResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointResult.swift; sourceTree = "<group>"; };
 		E93A64A9200CECDD00221DF5 /* TestEndPointResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEndPointResult.swift; sourceTree = "<group>"; };
+		E93A64AB200CFE4A00221DF5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		"HyperSpace::HyperSpace::Product" /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HyperSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
@@ -302,16 +303,16 @@
 			path = ".build/checkouts/then.git--569073275694509842/Source";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				E93A64AB200CFE4A00221DF5 /* README.md */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_22 /* Tests */,
 				OBJ_34 /* Dependencies */,
 				OBJ_70 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_62 /* Result 0.1.2 */ = {
@@ -507,7 +508,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

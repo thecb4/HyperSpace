@@ -24,8 +24,12 @@ public struct EndPointResult {
 
 extension EndPointResult {
   
-  public var responseString: String? {
-    return self.response?.description
+  public var responseString: Result<String, URL.RouterError> {
+    guard let httpResponse = self.response as? HTTPURLResponse else {
+      return .failure( .contactFailure(message:"no HTTP response detected") )
+    }
+    
+    return .success(httpResponse.description)
   }
   
   public var httpStatusCode: Result<HTTPStatusCode, URL.RouterError> {

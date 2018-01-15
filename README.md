@@ -122,13 +122,37 @@ static let current: Environment = .localhost
 }
 ```
 
-And in our application we would use it like this:
+## Resolving Endpoints
+Endpoints resolve to an EndPointResult that provides the HTTPResponse, Data, and Error you would normally get from a URLSession DataTask. EndPointResult is a struct with helper methods that return [Result](https://github.com/thecb4/Result) and a String version of the HTTPResponse, StatusCode, or JSON decode of the data.
+
 
 ```swift
-print(Router<Api>(at: .me).url) // http://localhost:8080/me
-print(Router<Api>(.test, at: .auth).url) // http://126.251.20.32/auth
-print(Router<Api>(.production, at: .posts(for: Date())).url) // https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId
+
+let ep = Router<Auth>(at: .signIn)
+
+let result = ep.resolve()
+
+let expectedJSON: Result<Example, URL.ResponseError> = result.json()
+
+switch  expectedJSON {
+
+  case let .success(value):
+    // do something with the json result
+
+  case .failure( .noDataPresent ):
+    print("no data present")
+    // gracefully handle no data being present
+
+  case let .failure( .decodeFailure(message) ):
+    print(message)
+    // gracefully handle decoding errors
+
+}
+
+
 ```
+
+
 
 ## What if I have only one environment?
 
