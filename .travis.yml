@@ -10,6 +10,7 @@ matrix:
       - ACTION=build PLATFORM=watchOS DESTINATION='platform=watchOS Simulator,name=Apple Watch - 38mm'
       - ACTION=test  PLATFORM=tvOS    DESTINATION='platform=tvOS Simulator,name=Apple TV'
     script:
+      - make update
       - xcodebuild clean $ACTION -project HyperSpace.xcodeproj -scheme HyperSpace-Package -destination "$DESTINATION"
 
   - os: osx
