@@ -1,0 +1,40 @@
+matrix:
+  include:
+  - os: osx
+    osx_image: xcode9.2
+    language: objective-c
+    env:
+      - JOB="macOS + Xcode"
+      - ACTION=build  PLATFORM=Mac     DESTINATION='platform=OS X'
+      - ACTION=build  PLATFORM=iOS     DESTINATION='platform=iOS Simulator,name=iPhone 8'
+      - ACTION=build  PLATFORM=watchOS DESTINATION='platform=watchOS Simulator,name=Apple Watch - 38mm'
+      - ACTION=build  PLATFORM=tvOS    DESTINATION='platform=tvOS Simulator,name=Apple TV'
+    script:
+      - swift package update
+      - xcodebuild clean $ACTION -project Result.xcodeproj -scheme Result-Package -destination "$DESTINATION"
+
+  - os: osx
+    osx_image: xcode9.2
+    language: objective-c
+    env:
+      - JOB="macOS + Swift Package Manager"
+    script:
+      - swift build
+
+  - os: linux
+    dist: trusty
+    sudo: required
+    language: generic
+    env:
+      - JOB="Linux + Swift Package Manager"
+    script:
+      - "export SWIFT_VERSION=4.0.3"
+      - "eval \"$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)\""
+      - export LD_LIBRARY_PATH=$HOME/.swiftenv/versions/$SWIFT_VERSION/usr/lib/swift/linux:$LD_LIBRARY_PATH
+      - swift build
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+notifications:
+  email: true
