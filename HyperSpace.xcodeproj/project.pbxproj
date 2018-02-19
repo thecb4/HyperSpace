@@ -21,15 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E94A808E203B705B00C55DB1 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94A808D203B705B00C55DB1 /* Result.framework */; };
 		OBJ_100 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Scheme.swift */; };
 		OBJ_101 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* StatusCode.swift */; };
 		OBJ_102 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* URLSession.extension.swift */; };
-		OBJ_104 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
-		OBJ_110 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* AnyError.swift */; };
-		OBJ_111 /* NoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* NoError.swift */; };
-		OBJ_112 /* Result.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Result.ext.swift */; };
-		OBJ_113 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Result.swift */; };
-		OBJ_114 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ResultProtocol.swift */; };
 		OBJ_55 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_61 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Package.swift */; };
 		OBJ_67 /* HyperSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* HyperSpaceTests.swift */; };
@@ -43,7 +38,6 @@
 		OBJ_75 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* TestRouter.swift */; };
 		OBJ_76 /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* TestScheme.swift */; };
 		OBJ_78 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HyperSpace::HyperSpace::Product" /* HyperSpace.framework */; };
-		OBJ_79 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
 		OBJ_88 /* EndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* EndPointResult.swift */; };
 		OBJ_89 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Environment.swift */; };
 		OBJ_90 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Host.swift */; };
@@ -59,26 +53,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E93A64CE200EEAEC00221DF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Result::Result";
-			remoteInfo = Result;
-		};
 		E93A64CF200EEAEC00221DF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "HyperSpace::HyperSpace";
 			remoteInfo = HyperSpace;
-		};
-		E93A64D0200EEAEC00221DF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Result::Result";
-			remoteInfo = Result;
 		};
 		E93A64D1200EEAEC00221DF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -90,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E94A808D203B705B00C55DB1 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		"HyperSpace::HyperSpace::Product" /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HyperSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -125,7 +106,6 @@
 		OBJ_45 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/cavellebenjamin/Development/apps/HyperSpace/.build/checkouts/Result.git--3192226916450554167/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* EndPointResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointResult.swift; sourceTree = "<group>"; };
-		"Result::Result::Product" /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,14 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_104 /* Result.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_115 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
+				E94A808E203B705B00C55DB1 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,13 +122,20 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_78 /* HyperSpace.framework in Frameworks */,
-				OBJ_79 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E94A808C203B705A00C55DB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E94A808D203B705B00C55DB1 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_24 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,12 +197,11 @@
 			children = (
 				"HyperSpace::HyperSpaceTests::Product" /* HyperSpaceTests.xctest */,
 				"HyperSpace::HyperSpace::Product" /* HyperSpace.framework */,
-				"Result::Result::Product" /* Result.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -231,8 +210,8 @@
 				OBJ_36 /* DerivedData */,
 				OBJ_37 /* Dependencies */,
 				OBJ_46 /* Products */,
+				E94A808C203B705A00C55DB1 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -275,11 +254,11 @@
 			buildPhases = (
 				OBJ_87 /* Sources */,
 				OBJ_103 /* Frameworks */,
+				E94A808F203B706E00C55DB1 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_105 /* PBXTargetDependency */,
 			);
 			name = HyperSpace;
 			productName = HyperSpace;
@@ -297,7 +276,6 @@
 			);
 			dependencies = (
 				OBJ_80 /* PBXTargetDependency */,
-				OBJ_82 /* PBXTargetDependency */,
 			);
 			name = HyperSpaceTests;
 			productName = HyperSpaceTests;
@@ -316,22 +294,6 @@
 			);
 			name = HyperSpacePackageDescription;
 			productName = HyperSpacePackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"Result::Result" /* Result */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_106 /* Build configuration list for PBXNativeTarget "Result" */;
-			buildPhases = (
-				OBJ_109 /* Sources */,
-				OBJ_115 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Result;
-			productName = Result;
-			productReference = "Result::Result::Product" /* Result.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"Result::SwiftPMPackageDescription" /* ResultPackageDescription */ = {
@@ -363,7 +325,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,25 +334,30 @@
 				"Result::SwiftPMPackageDescription" /* ResultPackageDescription */,
 				"HyperSpace::HyperSpaceTests" /* HyperSpaceTests */,
 				"HyperSpace::HyperSpace" /* HyperSpace */,
-				"Result::Result" /* Result */,
 				"HyperSpace::HyperSpacePackageTests::ProductTarget" /* HyperSpacePackageTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		OBJ_109 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+/* Begin PBXShellScriptBuildPhase section */
+		E94A808F203B706E00C55DB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_110 /* AnyError.swift in Sources */,
-				OBJ_111 /* NoError.swift in Sources */,
-				OBJ_112 /* Result.ext.swift in Sources */,
-				OBJ_113 /* Result.swift in Sources */,
-				OBJ_114 /* ResultProtocol.swift in Sources */,
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		OBJ_54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -449,11 +416,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_105 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Result::Result" /* Result */;
-			targetProxy = E93A64CE200EEAEC00221DF5 /* PBXContainerItemProxy */;
-		};
 		OBJ_120 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HyperSpace::HyperSpaceTests" /* HyperSpaceTests */;
@@ -464,58 +426,9 @@
 			target = "HyperSpace::HyperSpace" /* HyperSpace */;
 			targetProxy = E93A64CF200EEAEC00221DF5 /* PBXContainerItemProxy */;
 		};
-		OBJ_82 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Result::Result" /* Result */;
-			targetProxy = E93A64D0200EEAEC00221DF5 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_107 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = HyperSpace.xcodeproj/Result_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Result;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Result;
-			};
-			name = Debug;
-		};
-		OBJ_108 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = HyperSpace.xcodeproj/Result_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Result;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Result;
-			};
-			name = Release;
-		};
 		OBJ_118 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -649,6 +562,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpace_Info.plist;
@@ -671,6 +585,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HyperSpace.xcodeproj/HyperSpace_Info.plist;
@@ -689,15 +604,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_106 /* Build configuration list for PBXNativeTarget "Result" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_107 /* Debug */,
-				OBJ_108 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		OBJ_117 /* Build configuration list for PBXAggregateTarget "HyperSpacePackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

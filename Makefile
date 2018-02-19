@@ -4,7 +4,8 @@
 # INSTALL_PATH = /usr/local/bin/$(APP_NAME)
 
 update:
-	swift package --enable-prefetching update && swift package generate-xcodeproj
+	swift package --enable-prefetching update
+        carthage update --platform iOS
 
 build:
 	swift build
