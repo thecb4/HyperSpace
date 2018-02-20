@@ -5,7 +5,7 @@
 
 update:
 	swift package --enable-prefetching update
-        carthage update --platform iOS
+	carthage update --platform iOS
 
 build:
 	swift build
