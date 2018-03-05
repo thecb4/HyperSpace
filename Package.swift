@@ -24,7 +24,7 @@ let package = Package(
             name: "HyperSpace",
             dependencies: ["Result"],
             path: "Sources",
-            sources:["Core"]),
+            sources:["HyperSpace/Core"]),
         .testTarget(
             name: "HyperSpaceUnitTests",
             dependencies: ["Result","HyperSpace"]),
