@@ -20,9 +20,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "Result",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources",
+            sources:["Core"]),
         .testTarget(
-            name: "ResultTests",
+            name: "ResultUnitTests",
             dependencies: ["Result"]),
     ],
     swiftLanguageVersions: [4]

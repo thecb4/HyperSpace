@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-      .package(url: "https://github.com/thecb4/Result.git", .upToNextMinor(from: "0.1.2"))
+      .package(url: "https://github.com/thecb4/Result.git", .upToNextMinor(from: "0.5.0"))
 //      .package(url: "https://github.com/freshOS/then.git",  .upToNextMinor(from: "3.0.2"))
     ],
     targets: [
@@ -22,9 +22,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "HyperSpace",
-            dependencies: ["Result"]),
+            dependencies: ["Result"],
+            path: "Sources",
+            sources:["Core"]),
         .testTarget(
-            name: "HyperSpaceTests",
+            name: "HyperSpaceUnitTests",
             dependencies: ["Result","HyperSpace"]),
     ]
 )
