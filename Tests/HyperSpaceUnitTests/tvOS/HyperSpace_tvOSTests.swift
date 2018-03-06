@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import HyperSpace_tvOS
+@testable import HyperSpace
 
 class HyperSpace_tvOSTests: XCTestCase {
     

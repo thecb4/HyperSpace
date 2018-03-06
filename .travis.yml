@@ -29,7 +29,7 @@ before_install:
     Carthage)
       brew update;
       brew outdated carthage || brew upgrade carthage;
-      brew tap xcodeswift/sake git@github.com:xcodeswift/sake.git;
+      brew tap xcodeswift/sake https://github.com/xcodeswift/sake.git;
       brew install sake;;
     SwiftPM)
       if [ "$TRAVIS_OS_NAME" == "linux" ]; then
