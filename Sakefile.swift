@@ -32,7 +32,7 @@ let sake = Sake(tasks: [
     Task("carthage-build-platform-dependencies", description: "Builds project Carthage dependencies for platform") {
         // Here is where you define your build task
         try Utils.shell.runAndPrint(bash: "carthage bootstrap --platform \(platform)")
-        try Utils.shell.runAndPrint(bash: carthageBuild)
+        // try Utils.shell.runAndPrint(bash: carthageBuild)
     },
     Task("xcode-build-platform", description: "Build specific platform with XCode") {
         // Here is where you define your build task
