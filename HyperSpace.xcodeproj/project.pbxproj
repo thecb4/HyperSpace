@@ -30,22 +30,17 @@
 		BF_266607557997 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_274864181325 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_278787314889 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_831789068724 /* Route.swift */; };
-		BF_283742399596 = {isa = PBXBuildFile; fileRef = FR_497998269578 /* HyperSpace_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF_301831368807 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
 		BF_302320079009 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_303381734575 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_766984753110 /* Scheme.swift */; };
 		BF_311580147610 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_321408082364 /* HyperSpace.framework */; };
 		BF_316084859244 /* EndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_858429549871 /* EndPointResult.swift */; };
-		BF_317263345249 = {isa = PBXBuildFile; fileRef = FR_208138567757 /* HyperSpaceUnitTests.xctest */; };
 		BF_320833691732 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_427564803739 /* TestEnvironment.swift */; };
 		BF_328618363998 /* HyperSpace_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_728929624136 /* HyperSpace_tvOSTests.swift */; };
 		BF_329010970995 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
 		BF_330557087906 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
 		BF_335177943568 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_392571183379 /* Environment.swift */; };
-		BF_335364631952 /* HyperSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_366806914336 /* HyperSpaceTests.swift */; };
-		BF_338763699486 = {isa = PBXBuildFile; fileRef = FR_724914065238 /* HyperSpace.framework */; };
 		BF_340160990986 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_605436387730 /* TestMethod.swift */; };
-		BF_343446202692 = {isa = PBXBuildFile; fileRef = FR_901842325542 /* HyperSpaceUnitTests.xctest */; };
 		BF_366714050507 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
 		BF_371309239328 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_377946422491 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_898443312606 /* URLSession.extension.swift */; };
@@ -55,11 +50,9 @@
 		"BF_405092585448-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_406485678706 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; };
 		"BF_406485678706-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BF_413239285027 = {isa = PBXBuildFile; fileRef = FR_376116890244 /* HyperSpaceUnitTests.xctest */; };
 		BF_423839783885 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_431478383219 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_440327821585 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
-		BF_450063085751 = {isa = PBXBuildFile; fileRef = FR_920065964606 /* HyperSpaceUnitTests.xctest */; };
 		BF_453943366681 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_669811003841 /* Result.framework */; };
 		BF_454083319090 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_745958937782 /* HyperSpace.framework */; };
 		BF_460596455029 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
@@ -73,9 +66,7 @@
 		BF_505041186009 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_510567528954 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_427564803739 /* TestEnvironment.swift */; };
 		BF_523364876307 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_327922330325 /* TestRoutePath.swift */; };
-		BF_523723144637 = {isa = PBXBuildFile; fileRef = FR_929874937904 /* HyperSpace.framework */; };
 		BF_526975474379 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
-		BF_531993043853 = {isa = PBXBuildFile; fileRef = FR_745958937782 /* HyperSpace.framework */; };
 		BF_540294777403 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_550318701325 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_561132030614 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
@@ -85,11 +76,9 @@
 		BF_585422978734 /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_459747902957 /* TestScheme.swift */; };
 		BF_591222695528 /* EndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_858429549871 /* EndPointResult.swift */; };
 		BF_595748777921 /* TestEndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_895932800706 /* TestEndPointResult.swift */; };
-		BF_597108867980 /* HyperSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_366806914336 /* HyperSpaceTests.swift */; };
 		BF_597418315818 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_763057275314 /* Result.framework */; };
 		BF_598024662448 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_327922330325 /* TestRoutePath.swift */; };
 		BF_599444121830 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
-		BF_618672680415 /* HyperSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_366806914336 /* HyperSpaceTests.swift */; };
 		BF_623153013463 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
 		BF_630605162186 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_669811003841 /* Result.framework */; };
 		BF_640569707638 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
@@ -113,7 +102,6 @@
 		BF_766609157767 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_767184071909 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_771392511867 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
-		BF_771672127151 /* HyperSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_366806914336 /* HyperSpaceTests.swift */; };
 		BF_783323487133 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_929874937904 /* HyperSpace.framework */; };
 		BF_792140801954 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_898443312606 /* URLSession.extension.swift */; };
 		BF_797761644778 /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_126257123812 /* IP.swift */; };
@@ -127,7 +115,6 @@
 		BF_857916044330 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_859279924660 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_835823662214 /* StatusCode.swift */; };
 		BF_874271379722 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_835823662214 /* StatusCode.swift */; };
-		BF_878135152953 = {isa = PBXBuildFile; fileRef = FR_321408082364 /* HyperSpace.framework */; };
 		BF_882566665588 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
 		BF_897028979368 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_908148473421 /* TestEndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_895932800706 /* TestEndPointResult.swift */; };
@@ -201,7 +188,6 @@
 		FR_327922330325 /* TestRoutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRoutePath.swift; sourceTree = "<group>"; };
 		FR_336265081193 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		FR_342317856809 /* HyperSpace_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperSpace_tvOS.h; sourceTree = "<group>"; };
-		FR_366806914336 /* HyperSpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpaceTests.swift; sourceTree = "<group>"; };
 		FR_376116890244 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_392571183379 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		FR_419975788485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -443,7 +429,6 @@
 		G_7048510630252 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FR_366806914336 /* HyperSpaceTests.swift */,
 				FR_895932800706 /* TestEndPointResult.swift */,
 				FR_427564803739 /* TestEnvironment.swift */,
 				FR_704812327483 /* TestIP.swift */,
@@ -710,6 +695,9 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = G_8448771205358;
 			projectDirPath = "";
 			projectRoot = "";
@@ -836,7 +824,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_771672127151 /* HyperSpaceTests.swift in Sources */,
 				BF_851356488160 /* HyperSpace_phoneOSTests.swift in Sources */,
 				BF_736081116260 /* TestEndPointResult.swift in Sources */,
 				BF_119441762017 /* TestEnvironment.swift in Sources */,
@@ -876,7 +863,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_618672680415 /* HyperSpaceTests.swift in Sources */,
 				BF_328618363998 /* HyperSpace_tvOSTests.swift in Sources */,
 				BF_799426172576 /* TestEndPointResult.swift in Sources */,
 				BF_320833691732 /* TestEnvironment.swift in Sources */,
@@ -938,7 +924,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_597108867980 /* HyperSpaceTests.swift in Sources */,
 				BF_595748777921 /* TestEndPointResult.swift in Sources */,
 				BF_510567528954 /* TestEnvironment.swift in Sources */,
 				BF_733335254056 /* TestIP.swift in Sources */,
@@ -955,7 +940,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_335364631952 /* HyperSpaceTests.swift in Sources */,
 				BF_908148473421 /* TestEndPointResult.swift in Sources */,
 				BF_183418532493 /* TestEnvironment.swift in Sources */,
 				BF_366714050507 /* TestIP.swift in Sources */,
