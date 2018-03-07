@@ -54,6 +54,7 @@ let sake = Sake(tasks: [
         /* Before all the tasks */
         do {
             platform = try Utils.shell.run(bash: "echo $PLATFORM")
+            print("platform = \(platform)")
         } catch {
 
         }
