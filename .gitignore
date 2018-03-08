@@ -8,6 +8,7 @@
 # Carthage/Checkouts
 
 Carthage/Build
+Carthage/Checkout
 
 ### macOS ###
 *.DS_Store
