@@ -31,20 +31,16 @@
 		BF_266607557997 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_274864181325 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_278787314889 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_831789068724 /* Route.swift */; };
-		BF_283742399596 = {isa = PBXBuildFile; fileRef = FR_497998269578 /* HyperSpace_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF_301831368807 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
 		BF_302320079009 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_303381734575 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_766984753110 /* Scheme.swift */; };
 		BF_311580147610 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_321408082364 /* HyperSpace.framework */; };
 		BF_316084859244 /* EndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_858429549871 /* EndPointResult.swift */; };
-		BF_317263345249 = {isa = PBXBuildFile; fileRef = FR_208138567757 /* HyperSpaceUnitTests.xctest */; };
 		BF_320833691732 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_427564803739 /* TestEnvironment.swift */; };
 		BF_329010970995 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
 		BF_330557087906 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
 		BF_335177943568 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_392571183379 /* Environment.swift */; };
-		BF_338763699486 = {isa = PBXBuildFile; fileRef = FR_724914065238 /* HyperSpace.framework */; };
 		BF_340160990986 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_605436387730 /* TestMethod.swift */; };
-		BF_343446202692 = {isa = PBXBuildFile; fileRef = FR_901842325542 /* HyperSpaceUnitTests.xctest */; };
 		BF_364017089584 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_580935083838 /* Result.framework */; };
 		"BF_364017089584-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_580935083838 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_366714050507 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
@@ -54,11 +50,9 @@
 		BF_387666494681 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_406485678706 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; };
 		"BF_406485678706-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BF_413239285027 = {isa = PBXBuildFile; fileRef = FR_376116890244 /* HyperSpaceUnitTests.xctest */; };
 		BF_423839783885 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_431478383219 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_440327821585 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
-		BF_450063085751 = {isa = PBXBuildFile; fileRef = FR_920065964606 /* HyperSpaceUnitTests.xctest */; };
 		BF_453943366681 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_669811003841 /* Result.framework */; };
 		BF_454083319090 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_745958937782 /* HyperSpace.framework */; };
 		BF_460596455029 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
@@ -72,9 +66,7 @@
 		BF_505041186009 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_510567528954 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_427564803739 /* TestEnvironment.swift */; };
 		BF_523364876307 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_327922330325 /* TestRoutePath.swift */; };
-		BF_523723144637 = {isa = PBXBuildFile; fileRef = FR_929874937904 /* HyperSpace.framework */; };
 		BF_526975474379 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
-		BF_531993043853 = {isa = PBXBuildFile; fileRef = FR_745958937782 /* HyperSpace.framework */; };
 		BF_540294777403 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_550318701325 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_561132030614 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
@@ -123,7 +115,6 @@
 		BF_857916044330 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_859279924660 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_835823662214 /* StatusCode.swift */; };
 		BF_874271379722 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_835823662214 /* StatusCode.swift */; };
-		BF_878135152953 = {isa = PBXBuildFile; fileRef = FR_321408082364 /* HyperSpace.framework */; };
 		BF_882566665588 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
 		BF_897028979368 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_908148473421 /* TestEndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_895932800706 /* TestEndPointResult.swift */; };
@@ -737,6 +728,9 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = G_8448771205358;
 			projectDirPath = "";
 			projectRoot = "";
@@ -797,12 +791,10 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/thecb4/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/thecb4/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
