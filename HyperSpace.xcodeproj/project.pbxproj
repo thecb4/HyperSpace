@@ -48,7 +48,6 @@
 		BF_364017089584 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_580935083838 /* Result.framework */; };
 		"BF_364017089584-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_580935083838 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_366714050507 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
-		BF_370003507767 /* swift-corelibs-xctest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_118521580018 /* swift-corelibs-xctest.framework */; };
 		BF_371309239328 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_377946422491 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_898443312606 /* URLSession.extension.swift */; };
 		BF_380235077390 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_392571183379 /* Environment.swift */; };
@@ -63,7 +62,6 @@
 		BF_453943366681 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_669811003841 /* Result.framework */; };
 		BF_454083319090 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_745958937782 /* HyperSpace.framework */; };
 		BF_460596455029 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
-		BF_468170683770 /* swift-corelibs-xctest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_365456277254 /* swift-corelibs-xctest.framework */; };
 		BF_470163234138 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_473291563250 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_649620282369 /* IPv6.swift */; };
 		BF_474488225517 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
@@ -111,7 +109,6 @@
 		BF_766609157767 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_767184071909 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_771392511867 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
-		BF_775548994896 /* swift-corelibs-xctest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_361903676809 /* swift-corelibs-xctest.framework */; };
 		BF_783323487133 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_929874937904 /* HyperSpace.framework */; };
 		BF_784793312784 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_313313325923 /* Result.framework */; };
 		BF_792140801954 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_898443312606 /* URLSession.extension.swift */; };
@@ -121,8 +118,6 @@
 		BF_814088651427 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_831789068724 /* Route.swift */; };
 		BF_818571017913 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_821052891582 /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_126257123812 /* IP.swift */; };
-		BF_839174047696 /* swift-corelibs-xctest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_471058467364 /* swift-corelibs-xctest.framework */; };
-		"BF_839174047696-1" /* swift-corelibs-xctest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_471058467364 /* swift-corelibs-xctest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_851356488160 /* HyperSpace_phoneOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_697311087478 /* HyperSpace_phoneOSTests.swift */; };
 		BF_856936525858 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
 		BF_857916044330 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
@@ -185,14 +180,12 @@
 			dstSubfolderSpec = 10;
 			files = (
 				"BF_364017089584-1" /* Result.framework in CopyFiles */,
-				"BF_839174047696-1" /* swift-corelibs-xctest.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FR_118521580018 /* swift-corelibs-xctest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "swift-corelibs-xctest.framework"; path = "apple/swift-corelibs-xctest.framework"; sourceTree = "<group>"; };
 		FR_126257123812 /* IP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IP.swift; sourceTree = "<group>"; };
 		FR_131384036341 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		FR_208138567757 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,15 +197,12 @@
 		FR_327922330325 /* TestRoutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRoutePath.swift; sourceTree = "<group>"; };
 		FR_336265081193 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		FR_342317856809 /* HyperSpace_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperSpace_tvOS.h; sourceTree = "<group>"; };
-		FR_361903676809 /* swift-corelibs-xctest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "swift-corelibs-xctest.framework"; path = "apple/swift-corelibs-xctest.framework"; sourceTree = "<group>"; };
-		FR_365456277254 /* swift-corelibs-xctest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "swift-corelibs-xctest.framework"; path = "apple/swift-corelibs-xctest.framework"; sourceTree = "<group>"; };
 		FR_376116890244 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_392571183379 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		FR_419975788485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FR_427564803739 /* TestEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
 		FR_433468005986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FR_459747902957 /* TestScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScheme.swift; sourceTree = "<group>"; };
-		FR_471058467364 /* swift-corelibs-xctest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "swift-corelibs-xctest.framework"; path = "apple/swift-corelibs-xctest.framework"; sourceTree = "<group>"; };
 		FR_497998269578 /* HyperSpace_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperSpace_watchOS.h; sourceTree = "<group>"; };
 		FR_546922714905 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = thecb4/Result.framework; sourceTree = "<group>"; };
 		FR_580935083838 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = thecb4/Result.framework; sourceTree = "<group>"; };
@@ -255,7 +245,6 @@
 			files = (
 				BF_804412313809 /* Result.framework in Frameworks */,
 				BF_242513176917 /* HyperSpace.framework in Frameworks */,
-				BF_775548994896 /* swift-corelibs-xctest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +262,6 @@
 			files = (
 				BF_109920384804 /* Result.framework in Frameworks */,
 				BF_311580147610 /* HyperSpace.framework in Frameworks */,
-				BF_370003507767 /* swift-corelibs-xctest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +287,6 @@
 			files = (
 				BF_364017089584 /* Result.framework in Frameworks */,
 				BF_454083319090 /* HyperSpace.framework in Frameworks */,
-				BF_839174047696 /* swift-corelibs-xctest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +296,6 @@
 			files = (
 				BF_784793312784 /* Result.framework in Frameworks */,
 				BF_783323487133 /* HyperSpace.framework in Frameworks */,
-				BF_468170683770 /* swift-corelibs-xctest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +370,6 @@
 			children = (
 				FR_763057275314 /* Result.framework */,
 				FR_945036944673 /* Result.framework */,
-				FR_361903676809 /* swift-corelibs-xctest.framework */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -394,7 +379,6 @@
 			children = (
 				FR_131384036341 /* Result.framework */,
 				FR_580935083838 /* Result.framework */,
-				FR_471058467364 /* swift-corelibs-xctest.framework */,
 			);
 			path = Mac;
 			sourceTree = "<group>";
@@ -529,7 +513,6 @@
 			children = (
 				FR_313313325923 /* Result.framework */,
 				FR_584425140013 /* Result.framework */,
-				FR_365456277254 /* swift-corelibs-xctest.framework */,
 			);
 			path = watchOS;
 			sourceTree = "<group>";
@@ -566,7 +549,6 @@
 			children = (
 				FR_546922714905 /* Result.framework */,
 				FR_669811003841 /* Result.framework */,
-				FR_118521580018 /* swift-corelibs-xctest.framework */,
 			);
 			path = tvOS;
 			sourceTree = "<group>";
@@ -779,13 +761,11 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/tvOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/tvOS/apple/swift-corelibs-xctest.framework",
 				"$(SRCROOT)/Carthage/Build/tvOS/thecb4/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/apple/swift-corelibs-xctest.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/thecb4/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -817,13 +797,11 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/apple/swift-corelibs-xctest.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/thecb4/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/apple/swift-corelibs-xctest.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/thecb4/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -872,13 +850,11 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/watchOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/watchOS/apple/swift-corelibs-xctest.framework",
 				"$(SRCROOT)/Carthage/Build/watchOS/thecb4/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/apple/swift-corelibs-xctest.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/thecb4/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
