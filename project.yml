@@ -44,7 +44,7 @@ targets:
     dependencies:
       # - carthage: RxSwift
       # - carthage: Dwifft
-      - carthage: thecb4/Result
+      - carthage: Result
       - target: HyperSpace-$platform
   # GenKitUITests:
   #   type: bundle.ui-testing
