@@ -1,7 +1,13 @@
 
-# Created by https://www.gitignore.io/api/macOS,swift,macOS,iOS,tvOS,watchOS
+# Created by https://www.gitignore.io/api/macOS,swift,Carthage,swift-package-manager
 
-#!! ERROR: ios is undefined. Use list command to see defined gitignore types !!#
+### Carthage ###
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
 
 ### macOS ###
 *.DS_Store
@@ -88,8 +94,7 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-#!! ERROR: tvos is undefined. Use list command to see defined gitignore types !!#
+#!! ERROR: swift-package-manager is undefined. Use list command to see defined gitignore types !!#
 
-#!! ERROR: watchos is undefined. Use list command to see defined gitignore types !!#
 
-# End of https://www.gitignore.io/api/macOS,swift,macOS,iOS,tvOS,watchOS
+# End of https://www.gitignore.io/api/macOS,swift,Carthage,swift-package-manager
