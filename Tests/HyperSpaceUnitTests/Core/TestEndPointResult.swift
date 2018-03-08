@@ -53,6 +53,7 @@ class TestEndPointResult: XCTestCase {
     
   }
   
+  
   func testStatusCode() {
     
     let result = EndPointResult(response: self.response, data: self.data, error:nil)
@@ -71,6 +72,15 @@ class TestEndPointResult: XCTestCase {
   }
   
 }
+
+//extension TestEndPointResult {
+//  static var allTests: [(String, (TestEndPointResult) -> () throws -> Void)] {
+//    return [
+//      ("testStatusCode",testStatusCode)
+//
+//    ]
+//  }
+//}
 
 struct Example: Codable {
   let name: String

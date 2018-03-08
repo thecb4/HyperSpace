@@ -5,13 +5,27 @@ import SakefileDescription
 
 let project = "HyperSpace"
 
-var platform = ""
+enum Platform: String {
+  case macOS
+  case iOS
+  case watchOS
+  case tvOS
+}
 
-let destinations = [
-  "macOS":   "\"platform=OS X\"",
-  "iOS":     "\"platform=iOS Simulator,name=iPhone 8\"",
-  "watchOS": "\"platform=watchOS Simulator,name=Apple Watch - 38mm\"",
-  "tvOS":    "\"platform=tvOS Simulator,name=Apple TV\""
+var platform: Platform = .macOS
+
+enum PlatformDestination: String {
+  case macOS_Simulator   = "platform=OS X"
+  case iOS_Simulator     = "platform=iOS Simulator,name=iPhone 8"
+  case watchOS_Simulator = "platform=watchOS Simulator,name=Apple Watch - 38mm"
+  case tvOS_Simulator    = "platform=tvOS Simulator,name=Apple TV"
+}
+
+let destinations: [ Platform : PlatformDestination ] = [
+  .macOS:   .macOS_Simulator,
+  .iOS:     .iOS_Simulator,
+  .watchOS: .watchOS_Simulator,
+  .tvOS:    .tvOS_Simulator
 ]
 
 let sake = Sake(tasks: [
@@ -42,8 +56,14 @@ let sake = Sake(tasks: [
     Task("xcode-test-platform", description: "Test specific platform with XCode. XCPretty output.") {
         // Here is where you define your build task
         guard let destination = destinations[platform] else { fatalError() }
-        let action = "set -o pipefail && xcodebuild test -project \(project).xcodeproj -scheme \(project)-\(platform) -destination \(destination) -enableCodeCoverage YES | xcpretty"
-        try Utils.shell.runAndPrint(bash: action)
+        switch platform {
+        case .macOS,.iOS,.tvOS:
+          let action = "set -o pipefail && xcodebuild test -project \(project).xcodeproj -scheme \(project)-\(platform) -destination \"\(destination)\" -enableCodeCoverage YES | xcpretty"
+          try Utils.shell.runAndPrint(bash: action)
+        case .watchOS:
+          ()
+        }
+
     },
 
   ],
@@ -53,8 +73,10 @@ let sake = Sake(tasks: [
         .beforeAll({
         /* Before all the tasks */
         do {
-            platform = try Utils.shell.run(bash: "echo $PLATFORM")
-            print("platform = \(platform)")
+          let platformString = try Utils.shell.run(bash: "echo $PLATFORM")
+          guard let _platform = Platform(rawValue: platformString) else { fatalError() }
+          platform = _platform
+          print("platform = \(platform)")
         } catch {
 
         }

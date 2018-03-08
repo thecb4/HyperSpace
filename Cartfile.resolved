@@ -1,1 +1,2 @@
 github "thecb4/Result" "0.5.0"
+github "thecb4/swift-corelibs-xctest" "swift-DEVELOPMENT-SNAPSHOT-2018-03-06-a"

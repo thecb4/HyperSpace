@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF_109920384804 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_546922714905 /* Result.framework */; };
 		BF_119441762017 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_427564803739 /* TestEnvironment.swift */; };
 		BF_150046281459 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_766984753110 /* Scheme.swift */; };
 		BF_169103688492 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
@@ -30,32 +31,39 @@
 		BF_266607557997 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_274864181325 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_278787314889 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_831789068724 /* Route.swift */; };
+		BF_283742399596 = {isa = PBXBuildFile; fileRef = FR_497998269578 /* HyperSpace_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF_301831368807 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
 		BF_302320079009 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_303381734575 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_766984753110 /* Scheme.swift */; };
 		BF_311580147610 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_321408082364 /* HyperSpace.framework */; };
 		BF_316084859244 /* EndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_858429549871 /* EndPointResult.swift */; };
+		BF_317263345249 = {isa = PBXBuildFile; fileRef = FR_208138567757 /* HyperSpaceUnitTests.xctest */; };
 		BF_320833691732 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_427564803739 /* TestEnvironment.swift */; };
-		BF_328618363998 /* HyperSpace_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_728929624136 /* HyperSpace_tvOSTests.swift */; };
 		BF_329010970995 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
 		BF_330557087906 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
 		BF_335177943568 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_392571183379 /* Environment.swift */; };
+		BF_338763699486 = {isa = PBXBuildFile; fileRef = FR_724914065238 /* HyperSpace.framework */; };
 		BF_340160990986 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_605436387730 /* TestMethod.swift */; };
+		BF_343446202692 = {isa = PBXBuildFile; fileRef = FR_901842325542 /* HyperSpaceUnitTests.xctest */; };
+		BF_364017089584 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_580935083838 /* Result.framework */; };
+		"BF_364017089584-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_580935083838 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_366714050507 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
+		BF_370003507767 /* swift-corelibs-xctest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_118521580018 /* swift-corelibs-xctest.framework */; };
 		BF_371309239328 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_377946422491 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_898443312606 /* URLSession.extension.swift */; };
 		BF_380235077390 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_392571183379 /* Environment.swift */; };
 		BF_387666494681 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
-		BF_405092585448 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; };
-		"BF_405092585448-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_406485678706 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; };
 		"BF_406485678706-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF_413239285027 = {isa = PBXBuildFile; fileRef = FR_376116890244 /* HyperSpaceUnitTests.xctest */; };
 		BF_423839783885 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_431478383219 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_440327821585 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
+		BF_450063085751 = {isa = PBXBuildFile; fileRef = FR_920065964606 /* HyperSpaceUnitTests.xctest */; };
 		BF_453943366681 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_669811003841 /* Result.framework */; };
 		BF_454083319090 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_745958937782 /* HyperSpace.framework */; };
 		BF_460596455029 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
+		BF_468170683770 /* swift-corelibs-xctest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_365456277254 /* swift-corelibs-xctest.framework */; };
 		BF_470163234138 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_473291563250 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_649620282369 /* IPv6.swift */; };
 		BF_474488225517 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
@@ -66,7 +74,9 @@
 		BF_505041186009 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_510567528954 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_427564803739 /* TestEnvironment.swift */; };
 		BF_523364876307 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_327922330325 /* TestRoutePath.swift */; };
+		BF_523723144637 = {isa = PBXBuildFile; fileRef = FR_929874937904 /* HyperSpace.framework */; };
 		BF_526975474379 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
+		BF_531993043853 = {isa = PBXBuildFile; fileRef = FR_745958937782 /* HyperSpace.framework */; };
 		BF_540294777403 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_550318701325 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_561132030614 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
@@ -80,7 +90,6 @@
 		BF_598024662448 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_327922330325 /* TestRoutePath.swift */; };
 		BF_599444121830 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_623153013463 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
-		BF_630605162186 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_669811003841 /* Result.framework */; };
 		BF_640569707638 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
 		BF_647714166728 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_584425140013 /* Result.framework */; };
 		BF_653654995292 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_766984753110 /* Scheme.swift */; };
@@ -102,25 +111,29 @@
 		BF_766609157767 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_767184071909 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_771392511867 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
+		BF_775548994896 /* swift-corelibs-xctest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_361903676809 /* swift-corelibs-xctest.framework */; };
 		BF_783323487133 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_929874937904 /* HyperSpace.framework */; };
+		BF_784793312784 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_313313325923 /* Result.framework */; };
 		BF_792140801954 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_898443312606 /* URLSession.extension.swift */; };
 		BF_797761644778 /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_126257123812 /* IP.swift */; };
 		BF_799426172576 /* TestEndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_895932800706 /* TestEndPointResult.swift */; };
+		BF_804412313809 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_945036944673 /* Result.framework */; };
 		BF_814088651427 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_831789068724 /* Route.swift */; };
 		BF_818571017913 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_821052891582 /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_126257123812 /* IP.swift */; };
-		BF_822075958371 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_584425140013 /* Result.framework */; };
+		BF_839174047696 /* swift-corelibs-xctest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_471058467364 /* swift-corelibs-xctest.framework */; };
+		"BF_839174047696-1" /* swift-corelibs-xctest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_471058467364 /* swift-corelibs-xctest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_851356488160 /* HyperSpace_phoneOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_697311087478 /* HyperSpace_phoneOSTests.swift */; };
 		BF_856936525858 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
 		BF_857916044330 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_859279924660 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_835823662214 /* StatusCode.swift */; };
 		BF_874271379722 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_835823662214 /* StatusCode.swift */; };
+		BF_878135152953 = {isa = PBXBuildFile; fileRef = FR_321408082364 /* HyperSpace.framework */; };
 		BF_882566665588 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
 		BF_897028979368 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_908148473421 /* TestEndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_895932800706 /* TestEndPointResult.swift */; };
 		BF_917172596270 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_649620282369 /* IPv6.swift */; };
 		BF_921712672766 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_605436387730 /* TestMethod.swift */; };
-		BF_977542964545 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_763057275314 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,29 +184,38 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				"BF_405092585448-1" /* Result.framework in CopyFiles */,
+				"BF_364017089584-1" /* Result.framework in CopyFiles */,
+				"BF_839174047696-1" /* swift-corelibs-xctest.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FR_118521580018 /* swift-corelibs-xctest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "swift-corelibs-xctest.framework"; path = "apple/swift-corelibs-xctest.framework"; sourceTree = "<group>"; };
 		FR_126257123812 /* IP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IP.swift; sourceTree = "<group>"; };
 		FR_131384036341 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		FR_208138567757 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_292304349049 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		FR_295997628367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FR_296409061839 /* TestRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRoute.swift; sourceTree = "<group>"; };
+		FR_313313325923 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = thecb4/Result.framework; sourceTree = "<group>"; };
 		FR_321408082364 /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_327922330325 /* TestRoutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRoutePath.swift; sourceTree = "<group>"; };
 		FR_336265081193 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		FR_342317856809 /* HyperSpace_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperSpace_tvOS.h; sourceTree = "<group>"; };
+		FR_361903676809 /* swift-corelibs-xctest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "swift-corelibs-xctest.framework"; path = "apple/swift-corelibs-xctest.framework"; sourceTree = "<group>"; };
+		FR_365456277254 /* swift-corelibs-xctest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "swift-corelibs-xctest.framework"; path = "apple/swift-corelibs-xctest.framework"; sourceTree = "<group>"; };
 		FR_376116890244 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_392571183379 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		FR_419975788485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FR_427564803739 /* TestEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
+		FR_433468005986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FR_459747902957 /* TestScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScheme.swift; sourceTree = "<group>"; };
+		FR_471058467364 /* swift-corelibs-xctest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "swift-corelibs-xctest.framework"; path = "apple/swift-corelibs-xctest.framework"; sourceTree = "<group>"; };
 		FR_497998269578 /* HyperSpace_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperSpace_watchOS.h; sourceTree = "<group>"; };
+		FR_546922714905 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = thecb4/Result.framework; sourceTree = "<group>"; };
+		FR_580935083838 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = thecb4/Result.framework; sourceTree = "<group>"; };
 		FR_584425140013 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		FR_605436387730 /* TestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMethod.swift; sourceTree = "<group>"; };
 		FR_607192944469 /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
@@ -207,7 +229,6 @@
 		FR_704812327483 /* TestIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIP.swift; sourceTree = "<group>"; };
 		FR_717404718372 /* RouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterError.swift; sourceTree = "<group>"; };
 		FR_724914065238 /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FR_728929624136 /* HyperSpace_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSpace_tvOSTests.swift; sourceTree = "<group>"; };
 		FR_745958937782 /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_747877092124 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		FR_757384900208 /* TestQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuery.swift; sourceTree = "<group>"; };
@@ -218,11 +239,13 @@
 		FR_835823662214 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
 		FR_858429549871 /* EndPointResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointResult.swift; sourceTree = "<group>"; };
 		FR_869259762253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FR_895200135957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FR_895932800706 /* TestEndPointResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEndPointResult.swift; sourceTree = "<group>"; };
 		FR_898443312606 /* URLSession.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.extension.swift; sourceTree = "<group>"; };
 		FR_901842325542 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_920065964606 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_929874937904 /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FR_945036944673 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = thecb4/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,8 +253,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_977542964545 /* Result.framework in Frameworks */,
+				BF_804412313809 /* Result.framework in Frameworks */,
 				BF_242513176917 /* HyperSpace.framework in Frameworks */,
+				BF_775548994896 /* swift-corelibs-xctest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +271,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_630605162186 /* Result.framework in Frameworks */,
+				BF_109920384804 /* Result.framework in Frameworks */,
 				BF_311580147610 /* HyperSpace.framework in Frameworks */,
+				BF_370003507767 /* swift-corelibs-xctest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +297,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_405092585448 /* Result.framework in Frameworks */,
+				BF_364017089584 /* Result.framework in Frameworks */,
 				BF_454083319090 /* HyperSpace.framework in Frameworks */,
+				BF_839174047696 /* swift-corelibs-xctest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +307,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_822075958371 /* Result.framework in Frameworks */,
+				BF_784793312784 /* Result.framework in Frameworks */,
 				BF_783323487133 /* HyperSpace.framework in Frameworks */,
+				BF_468170683770 /* swift-corelibs-xctest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +383,8 @@
 			isa = PBXGroup;
 			children = (
 				FR_763057275314 /* Result.framework */,
+				FR_945036944673 /* Result.framework */,
+				FR_361903676809 /* swift-corelibs-xctest.framework */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -364,6 +393,8 @@
 			isa = PBXGroup;
 			children = (
 				FR_131384036341 /* Result.framework */,
+				FR_580935083838 /* Result.framework */,
+				FR_471058467364 /* swift-corelibs-xctest.framework */,
 			);
 			path = Mac;
 			sourceTree = "<group>";
@@ -393,9 +424,18 @@
 			isa = PBXGroup;
 			children = (
 				G_5461934703744 /* HyperSpaceUnitTests */,
+				G_5185726791623 /* Resources */,
 				FR_292304349049 /* LinuxMain.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		G_5185726791623 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				G_6868530556393 /* HyperSpace */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		G_5221305556297 /* macOS */ = {
@@ -420,10 +460,17 @@
 		G_6086816750817 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				FR_728929624136 /* HyperSpace_tvOSTests.swift */,
 				FR_419975788485 /* Info.plist */,
 			);
 			path = tvOS;
+			sourceTree = "<group>";
+		};
+		G_6868530556393 /* HyperSpace */ = {
+			isa = PBXGroup;
+			children = (
+				G_7234056583553 /* Core */,
+			);
+			path = HyperSpace;
 			sourceTree = "<group>";
 		};
 		G_7048510630252 /* Core */ = {
@@ -454,6 +501,14 @@
 			path = HyperSpace;
 			sourceTree = "<group>";
 		};
+		G_7234056583553 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FR_433468005986 /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		G_7394838186556 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +519,7 @@
 		G_7474390463456 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				FR_895200135957 /* Info.plist */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -471,7 +527,9 @@
 		G_8244488572839 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
+				FR_313313325923 /* Result.framework */,
 				FR_584425140013 /* Result.framework */,
+				FR_365456277254 /* swift-corelibs-xctest.framework */,
 			);
 			path = watchOS;
 			sourceTree = "<group>";
@@ -506,7 +564,9 @@
 		G_8628897169668 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				FR_546922714905 /* Result.framework */,
 				FR_669811003841 /* Result.framework */,
+				FR_118521580018 /* swift-corelibs-xctest.framework */,
 			);
 			path = tvOS;
 			sourceTree = "<group>";
@@ -695,9 +755,6 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
 			mainGroup = G_8448771205358;
 			projectDirPath = "";
 			projectRoot = "";
@@ -722,10 +779,14 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/tvOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/apple/swift-corelibs-xctest.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/thecb4/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/apple/swift-corelibs-xctest.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/thecb4/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -756,10 +817,14 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/apple/swift-corelibs-xctest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/thecb4/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/apple/swift-corelibs-xctest.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/thecb4/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -807,10 +872,14 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/watchOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/apple/swift-corelibs-xctest.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/thecb4/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/apple/swift-corelibs-xctest.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/thecb4/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -863,7 +932,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF_328618363998 /* HyperSpace_tvOSTests.swift in Sources */,
 				BF_799426172576 /* TestEndPointResult.swift in Sources */,
 				BF_320833691732 /* TestEnvironment.swift in Sources */,
 				BF_882566665588 /* TestIP.swift in Sources */,
@@ -1086,7 +1154,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Tests/HyperSpaceUnitTests/iOS/Info.plist;
+				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-iOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
@@ -1210,7 +1278,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Tests/HyperSpaceUnitTests/iOS/Info.plist;
+				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-iOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
@@ -1279,6 +1347,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
+				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-macOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
@@ -1294,7 +1363,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = Tests/HyperSpaceUnitTests/watchOS/Info.plist;
+				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-watchOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
@@ -1313,6 +1382,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
+				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-macOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
@@ -1328,7 +1398,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = Tests/HyperSpaceUnitTests/watchOS/Info.plist;
+				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-watchOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
@@ -1346,7 +1416,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = Tests/HyperSpaceUnitTests/tvOS/Info.plist;
+				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-tvOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
@@ -1437,7 +1507,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = Tests/HyperSpaceUnitTests/tvOS/Info.plist;
+				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-tvOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
