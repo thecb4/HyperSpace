@@ -1,6 +1,6 @@
 import XCTest
-@testable import HyperSpaceTests
+@testable import HyperSpaceUnitTests
 
 XCTMain([
-    testCase(HyperSpaceUnitTests.allTests),
+    testCase(TestEndPointResult.allTests),
 ])

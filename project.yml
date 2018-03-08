@@ -36,15 +36,16 @@ targets:
     type: bundle.unit-test
     platformSuffix: -$platform
     platform: [macOS, iOS, tvOS, watchOS]
+    settings:
+      INFOPLIST_FILE: Tests/Resources/HyperSpace/Core/Info.plist
     sources:
       - Tests/HyperSpaceUnitTests/Core
       - Tests/HyperSpaceUnitTests/$platform
     dependencies:
       # - carthage: RxSwift
       # - carthage: Dwifft
-      - carthage: Result
+      - carthage: thecb4/Result
       - target: HyperSpace-$platform
-        implicit: true
   # GenKitUITests:
   #   type: bundle.ui-testing
   #   platform: [macOS, iOS, tvOS, watchOS]
