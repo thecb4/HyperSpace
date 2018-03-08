@@ -15,10 +15,10 @@ enum Platform: String {
 var platform: Platform = .macOS
 
 enum PlatformDestination: String {
-  case macOS_Simulator   = "platform=OS X"
-  case iOS_Simulator     = "platform=iOS Simulator,name=iPhone 8"
-  case watchOS_Simulator = "platform=watchOS Simulator,name=Apple Watch - 38mm"
-  case tvOS_Simulator    = "platform=tvOS Simulator,name=Apple TV"
+case macOS_Simulator     = "\"platform=OS X\""
+  case iOS_Simulator     = "\"platform=iOS Simulator,name=iPhone 8\""
+  case watchOS_Simulator = "\"platform=watchOS Simulator,name=Apple Watch - 38mm\""
+  case tvOS_Simulator    = "\"platform=tvOS Simulator,name=Apple TV\""
 }
 
 let destinations: [ Platform : PlatformDestination ] = [
@@ -56,9 +56,10 @@ let sake = Sake(tasks: [
     Task("xcode-test-platform", description: "Test specific platform with XCode. XCPretty output.") {
         // Here is where you define your build task
         guard let destination = destinations[platform] else { fatalError() }
+        print("destination = \(destination.rawValue)")
         switch platform {
         case .macOS,.iOS,.tvOS:
-          let action = "set -o pipefail && xcodebuild test -project \(project).xcodeproj -scheme \(project)-\(platform) -destination \"\(destination)\" -enableCodeCoverage YES | xcpretty"
+          let action = "set -o pipefail && xcodebuild test -project \(project).xcodeproj -scheme \(project)-\(platform) -destination \(destination.rawValue) -enableCodeCoverage YES | xcpretty"
           try Utils.shell.runAndPrint(bash: action)
         case .watchOS:
           ()
