@@ -15,7 +15,7 @@ enum Platform: String {
 var platform: Platform = .macOS
 
 enum PlatformDestination: String {
-case macOS_Simulator     = "\"platform=OS X\""
+  case macOS_Simulator   = "\"platform=OS X\""
   case iOS_Simulator     = "\"platform=iOS Simulator,name=iPhone 8\""
   case watchOS_Simulator = "\"platform=watchOS Simulator,name=Apple Watch - 38mm\""
   case tvOS_Simulator    = "\"platform=tvOS Simulator,name=Apple TV\""
@@ -58,7 +58,10 @@ let sake = Sake(tasks: [
         guard let destination = destinations[platform] else { fatalError() }
         print("destination = \(destination.rawValue)")
         switch platform {
-        case .macOS,.iOS,.tvOS:
+        case .macOS:
+          let action = "set -o pipefail && xcodebuild test -project \(project).xcodeproj -scheme \(project)-\(platform) -destination \(destination.rawValue) | xcpretty"
+          try Utils.shell.runAndPrint(bash: action)
+        case .iOS,.tvOS:
           let action = "set -o pipefail && xcodebuild test -project \(project).xcodeproj -scheme \(project)-\(platform) -destination \(destination.rawValue) -enableCodeCoverage YES | xcpretty"
           try Utils.shell.runAndPrint(bash: action)
         case .watchOS:
@@ -75,7 +78,9 @@ let sake = Sake(tasks: [
         /* Before all the tasks */
         do {
           let platformString = try Utils.shell.run(bash: "echo $PLATFORM")
+          print("platform string = \(platformString)")
           guard let _platform = Platform(rawValue: platformString) else { fatalError() }
+          print("_platform = \(_platform)")
           platform = _platform
           print("platform = \(platform)")
         } catch {

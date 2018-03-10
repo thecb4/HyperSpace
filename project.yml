@@ -45,6 +45,7 @@ targets:
       # - carthage: RxSwift
       # - carthage: Dwifft
       - carthage: Result
+        embed: true
       - target: HyperSpace-$platform
   # GenKitUITests:
   #   type: bundle.ui-testing
