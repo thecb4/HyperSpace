@@ -3,7 +3,7 @@
 import Foundation
 import SakefileDescription
 
-let project = "HyperSpace"
+let project = "Result"
 
 enum Platform: String {
   case macOS
