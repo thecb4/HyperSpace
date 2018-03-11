@@ -39,6 +39,22 @@ public struct Router<T: EndpointType>: URLRepresentable {
       return components
   }
   
+  public func resolve(`for` request: URLRequest) -> EndPointResult {
+    
+    let _ = session.sendSynchronousRequest(with:request) {
+      
+      (data, response, error) -> Void in
+      
+      _response = response
+      _data     = data
+      _error    = error
+      
+    }
+    
+    return EndPointResult(response:_response, data:_data, error:_error)
+    
+  }
+  
   public func resolve(with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 500, `for` session: URLSession = URLSession.shared) -> EndPointResult {
     
     let request = self.request()
