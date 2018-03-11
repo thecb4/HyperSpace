@@ -39,7 +39,11 @@ public struct Router<T: EndpointType>: URLRepresentable {
       return components
   }
   
-  public func resolve(`for` request: URLRequest) -> EndPointResult {
+  public func resolve(`for` request: URLRequest, with session: URLSession = URLSession.shared) -> EndPointResult {
+    
+    var _response: URLResponse?
+    var _data: Data?
+    var _error: Error?
     
     let _ = session.sendSynchronousRequest(with:request) {
       
