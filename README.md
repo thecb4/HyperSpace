@@ -1,12 +1,13 @@
 # HyperSpace
 A fork of [SweetRouter](https://github.com/alickbass/SweetRouter)
 
+[![version](https://img.shields.io/badge/version-0.9.0-green.svg)](https://github.com/thecb4/HyperSpace/tree/0.9.0)
 ![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)
 [![Build Status](https://travis-ci.org/thecb4/HyperSpace.svg?branch=master)](https://travis-ci.org/thecb4/HyperSpace)
-[![codecov](https://codecov.io/gh/thecb4/HyperSpace/branch/master/graph/badge.svg)](https://codecov.io/gh/thecb4/HyperSpace)
+![Platforms](https://img.shields.io/badge/platform-%20Linux%20|%20macOS%20|20iOS%20|%20tvOS%20|%20watchOS%20-red.svg)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 
 I like
 
