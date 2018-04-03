@@ -10,6 +10,11 @@ import Result
 
 // https://medium.com/@jamesrochabrun/protocol-based-generic-networking-using-jsondecoder-and-decodable-in-swift-4-fc9e889e8081
 
+public struct FutureEndPointResult {
+  public let response: URLResponse
+  public let data: Data
+}
+
 public struct EndPointResult {
   public let response: URLResponse?
   public let data: Data?

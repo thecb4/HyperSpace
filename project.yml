@@ -32,6 +32,8 @@ targets:
     dependencies:
       - carthage: Result
         embed: true
+      - carthage: BrightFutures
+        embed: true
   HyperSpaceUnitTests:
     type: bundle.unit-test
     platformSuffix: -$platform
@@ -45,6 +47,8 @@ targets:
       # - carthage: RxSwift
       # - carthage: Dwifft
       - carthage: Result
+        embed: true
+      - carthage: BrightFutures
         embed: true
       - target: HyperSpace-$platform
   # GenKitUITests:

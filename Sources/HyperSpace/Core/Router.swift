@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import BrightFutures
 
 public struct HTTPHeader {
   let field:String
@@ -59,28 +60,58 @@ public struct Router<T: EndpointType>: URLRepresentable {
     
   }
   
-  public func resolve(with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 500, `for` session: URLSession = URLSession.shared) -> EndPointResult {
+//  public func resolve(with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 500, `for` session: URLSession = URLSession.shared) -> EndPointResult {
+//
+//    let request = self.request()
+//
+//    var _response: URLResponse?
+//    var _data: Data?
+//    var _error: Error?
+//
+//    let _ = session.sendSynchronousRequest(with:request) {
+//
+//      (data, response, error) -> Void in
+//
+//        _response = response
+//        _data     = data
+//        _error    = error
+//
+//    }
+//
+//    return EndPointResult(response:_response, data:_data, error:_error)
+//
+//  }
+  
+  public func resolve(
+    on request: URLRequest? = nil,
+    with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy,
+    timeoutInterval: TimeInterval = 500,
+    `for` session: URLSession = URLSession.shared) -> Future<EndPointResult, AnyError> {
     
-    let request = self.request()
+    let _request = request ?? self.request()
     
-    var _response: URLResponse?
-    var _data: Data?
-    var _error: Error?
+    print("[DEBUG] request = \(_request)")
     
-    let _ = session.sendSynchronousRequest(with:request) {
+    let (task, f): URLSession.FutureSessionDataTask = session.dataTask(with: _request)
+    
+    task.resume()
+    
+    print("[DEBUG] Future = \(f)")
+    
+    return f.flatMap { info -> Future<EndPointResult, AnyError> in
       
-      (data, response, error) -> Void in
+      let data     = info.0
+      let response = info.1
       
-        _response = response
-        _data     = data
-        _error    = error
-    
+      print("[DEBUG] response = \(response)")
+      
+      let result = EndPointResult(response: response, data: data, error: nil)
+      return Future<EndPointResult,AnyError>(value: result)
+      
     }
     
-    return EndPointResult(response:_response, data:_data, error:_error)
-    
   }
-  
+
   public func request(with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 500) -> URLRequest {
     let url     = self.url
     let method  = self.route.method
