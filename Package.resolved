@@ -2,12 +2,21 @@
   "object": {
     "pins": [
       {
+        "package": "BrightFutures",
+        "repositoryURL": "https://github.com/thecb4/BrightFutures.git",
+        "state": {
+          "branch": null,
+          "revision": "4be3e9c49e26955f4434e9d7dd1bfe02a658c24c",
+          "version": "6.1.1"
+        }
+      },
+      {
         "package": "Result",
         "repositoryURL": "https://github.com/thecb4/Result.git",
         "state": {
           "branch": null,
-          "revision": "d5cd3df196748117756611818e7be8064ba7ae27",
-          "version": "0.5.0"
+          "revision": "ec9ccc520737401564c365c6fad3544599ca8084",
+          "version": "0.7.13"
         }
       }
     ]

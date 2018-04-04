@@ -31,7 +31,7 @@ let destinations: [ Platform : PlatformDestination ] = [
 let sake = Sake(tasks: [
     Task("xcodegen-clean", description: "Removed XCode Project Data") {
         // Here is where you define your build task
-        try Utils.shell.runAndPrint(bash: "rm -rf HyperSpace.xcodreproj")
+        try Utils.shell.runAndPrint(bash: "rm -rf \(project).xcodreproj")
         try Utils.shell.runAndPrint(bash: "rm -rf DerivedData")
     },
     Task("xcodegen", description: "Generate XCode Project Data") {

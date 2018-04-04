@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BF_119441762017 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_427564803739 /* TestEnvironment.swift */; };
+		BF_145643409963 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_551539716982 /* BrightFutures.framework */; };
 		BF_150046281459 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_766984753110 /* Scheme.swift */; };
 		BF_169103688492 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
-		BF_172730557857 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_327922330325 /* TestRoutePath.swift */; };
 		BF_176450857537 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_831789068724 /* Route.swift */; };
 		BF_182460549923 /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_459747902957 /* TestScheme.swift */; };
-		BF_183418532493 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_427564803739 /* TestEnvironment.swift */; };
 		BF_183659285644 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_186134393255 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_649620282369 /* IPv6.swift */; };
 		BF_190786661955 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_766984753110 /* Scheme.swift */; };
@@ -28,9 +27,11 @@
 		BF_261071204269 /* HyperSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702630713150 /* HyperSpace.swift */; };
 		BF_261847511937 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_605436387730 /* TestMethod.swift */; };
 		BF_266607557997 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
+		BF_274663517756 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_551539716982 /* BrightFutures.framework */; };
 		BF_274864181325 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_278787314889 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_831789068724 /* Route.swift */; };
-		BF_301831368807 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
+		BF_296620472767 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_205585184288 /* BrightFutures.framework */; };
+		"BF_296620472767-1" /* BrightFutures.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_205585184288 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_302320079009 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
 		BF_303381734575 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_766984753110 /* Scheme.swift */; };
 		BF_311580147610 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_321408082364 /* HyperSpace.framework */; };
@@ -40,7 +41,6 @@
 		BF_330557087906 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
 		BF_335177943568 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_392571183379 /* Environment.swift */; };
 		BF_340160990986 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_605436387730 /* TestMethod.swift */; };
-		BF_366714050507 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
 		BF_371309239328 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_377946422491 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_898443312606 /* URLSession.extension.swift */; };
 		BF_380235077390 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_392571183379 /* Environment.swift */; };
@@ -51,10 +51,10 @@
 		"BF_406485678706-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_423839783885 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_431478383219 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
+		BF_431805886501 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_202096821994 /* BrightFutures.framework */; };
 		BF_440327821585 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
 		BF_453943366681 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_669811003841 /* Result.framework */; };
 		BF_454083319090 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_745958937782 /* HyperSpace.framework */; };
-		BF_460596455029 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_470163234138 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_473291563250 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_649620282369 /* IPv6.swift */; };
 		BF_474488225517 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
@@ -69,7 +69,6 @@
 		BF_540294777403 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_336265081193 /* Method.swift */; };
 		BF_550318701325 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_561132030614 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
-		BF_572731970123 /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_459747902957 /* TestScheme.swift */; };
 		BF_575792538119 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_296409061839 /* TestRoute.swift */; };
 		BF_585422978734 /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_459747902957 /* TestScheme.swift */; };
 		BF_591222695528 /* EndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_858429549871 /* EndPointResult.swift */; };
@@ -79,6 +78,8 @@
 		BF_598024662448 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_327922330325 /* TestRoutePath.swift */; };
 		BF_599444121830 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_623153013463 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
+		BF_626516198255 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_205585184288 /* BrightFutures.framework */; };
+		"BF_626516198255-1" /* BrightFutures.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_205585184288 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_630605162186 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_669811003841 /* Result.framework */; };
 		BF_640569707638 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
 		BF_647714166728 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_584425140013 /* Result.framework */; };
@@ -89,6 +90,7 @@
 		BF_666993197276 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_327922330325 /* TestRoutePath.swift */; };
 		BF_670431765923 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_649620282369 /* IPv6.swift */; };
 		BF_681819731921 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_835823662214 /* StatusCode.swift */; };
+		BF_701723055910 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_202096821994 /* BrightFutures.framework */; };
 		BF_703195241221 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_709652466085 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_712893125066 /* HyperSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702630713150 /* HyperSpace.swift */; };
@@ -101,25 +103,25 @@
 		BF_766609157767 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_767184071909 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_771392511867 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
-		BF_783323487133 /* HyperSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_929874937904 /* HyperSpace.framework */; };
 		BF_792140801954 /* URLSession.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_898443312606 /* URLSession.extension.swift */; };
 		BF_797761644778 /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_126257123812 /* IP.swift */; };
 		BF_799426172576 /* TestEndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_895932800706 /* TestEndPointResult.swift */; };
 		BF_814088651427 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_831789068724 /* Route.swift */; };
-		BF_818571017913 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_821052891582 /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_126257123812 /* IP.swift */; };
-		BF_822075958371 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_584425140013 /* Result.framework */; };
 		BF_851356488160 /* HyperSpace_phoneOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_697311087478 /* HyperSpace_phoneOSTests.swift */; };
 		BF_856936525858 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
 		BF_857916044330 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_717404718372 /* RouterError.swift */; };
 		BF_859279924660 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_835823662214 /* StatusCode.swift */; };
 		BF_874271379722 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_835823662214 /* StatusCode.swift */; };
 		BF_882566665588 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_704812327483 /* TestIP.swift */; };
+		BF_888157188907 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_921697573880 /* BrightFutures.framework */; };
 		BF_897028979368 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_702683407012 /* Router.swift */; };
-		BF_908148473421 /* TestEndPointResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_895932800706 /* TestEndPointResult.swift */; };
 		BF_917172596270 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_649620282369 /* IPv6.swift */; };
-		BF_921712672766 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_605436387730 /* TestMethod.swift */; };
 		BF_977542964545 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_763057275314 /* Result.framework */; };
+		E924696920717703007A4CB8 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924696820717703007A4CB8 /* AnyError.swift */; };
+		E924696A20717703007A4CB8 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924696820717703007A4CB8 /* AnyError.swift */; };
+		E924696B20717703007A4CB8 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924696820717703007A4CB8 /* AnyError.swift */; };
+		E924696C20717703007A4CB8 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924696820717703007A4CB8 /* AnyError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,13 +146,6 @@
 			remoteGlobalIDString = NT_745958937782;
 			remoteInfo = "HyperSpace-macOS";
 		};
-		CIP_92006596460 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = P_1154077110986 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = NT_929874937904;
-			remoteInfo = "HyperSpace-watchOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -161,6 +156,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				"BF_406485678706-1" /* Result.framework in CopyFiles */,
+				"BF_626516198255-1" /* BrightFutures.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,14 +167,18 @@
 			dstSubfolderSpec = 10;
 			files = (
 				"BF_405092585448-1" /* Result.framework in CopyFiles */,
+				"BF_296620472767-1" /* BrightFutures.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E924696820717703007A4CB8 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
 		FR_126257123812 /* IP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IP.swift; sourceTree = "<group>"; };
 		FR_131384036341 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
+		FR_202096821994 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BrightFutures.framework; sourceTree = "<group>"; };
+		FR_205585184288 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BrightFutures.framework; sourceTree = "<group>"; };
 		FR_208138567757 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_287869458482 /* HyperSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperSpace.h; sourceTree = "<group>"; };
 		FR_292304349049 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
@@ -195,6 +195,7 @@
 		FR_433468005986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FR_459747902957 /* TestScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScheme.swift; sourceTree = "<group>"; };
 		FR_497998269578 /* HyperSpace_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperSpace_watchOS.h; sourceTree = "<group>"; };
+		FR_551539716982 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BrightFutures.framework; sourceTree = "<group>"; };
 		FR_584425140013 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		FR_605436387730 /* TestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMethod.swift; sourceTree = "<group>"; };
 		FR_607192944469 /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
@@ -221,7 +222,7 @@
 		FR_895932800706 /* TestEndPointResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEndPointResult.swift; sourceTree = "<group>"; };
 		FR_898443312606 /* URLSession.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.extension.swift; sourceTree = "<group>"; };
 		FR_901842325542 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FR_920065964606 /* HyperSpaceUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperSpaceUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FR_921697573880 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BrightFutures.framework; sourceTree = "<group>"; };
 		FR_929874937904 /* HyperSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -231,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF_977542964545 /* Result.framework in Frameworks */,
+				BF_431805886501 /* BrightFutures.framework in Frameworks */,
 				BF_242513176917 /* HyperSpace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF_453943366681 /* Result.framework in Frameworks */,
+				BF_145643409963 /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF_630605162186 /* Result.framework in Frameworks */,
+				BF_274663517756 /* BrightFutures.framework in Frameworks */,
 				BF_311580147610 /* HyperSpace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF_597418315818 /* Result.framework in Frameworks */,
+				BF_701723055910 /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF_406485678706 /* Result.framework in Frameworks */,
+				BF_626516198255 /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,16 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF_405092585448 /* Result.framework in Frameworks */,
+				BF_296620472767 /* BrightFutures.framework in Frameworks */,
 				BF_454083319090 /* HyperSpace.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FBP_92006596460 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF_822075958371 /* Result.framework in Frameworks */,
-				BF_783323487133 /* HyperSpace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF_647714166728 /* Result.framework in Frameworks */,
+				BF_888157188907 /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +331,7 @@
 				FR_766984753110 /* Scheme.swift */,
 				FR_835823662214 /* StatusCode.swift */,
 				FR_898443312606 /* URLSession.extension.swift */,
+				E924696820717703007A4CB8 /* AnyError.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -355,6 +355,7 @@
 		G_2262017438925 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FR_202096821994 /* BrightFutures.framework */,
 				FR_763057275314 /* Result.framework */,
 			);
 			path = iOS;
@@ -363,6 +364,7 @@
 		G_2262017442691 /* Mac */ = {
 			isa = PBXGroup;
 			children = (
+				FR_205585184288 /* BrightFutures.framework */,
 				FR_131384036341 /* Result.framework */,
 			);
 			path = Mac;
@@ -496,6 +498,7 @@
 		G_8244488572839 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
+				FR_921697573880 /* BrightFutures.framework */,
 				FR_584425140013 /* Result.framework */,
 			);
 			path = watchOS;
@@ -523,7 +526,6 @@
 				FR_901842325542 /* HyperSpaceUnitTests.xctest */,
 				FR_208138567757 /* HyperSpaceUnitTests.xctest */,
 				FR_376116890244 /* HyperSpaceUnitTests.xctest */,
-				FR_920065964606 /* HyperSpaceUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -531,6 +533,7 @@
 		G_8628897169668 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				FR_551539716982 /* BrightFutures.framework */,
 				FR_669811003841 /* Result.framework */,
 			);
 			path = tvOS;
@@ -673,24 +676,6 @@
 			productReference = FR_901842325542 /* HyperSpaceUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		NT_920065964606 /* HyperSpaceUnitTests-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CL_920065964606 /* Build configuration list for PBXNativeTarget "HyperSpaceUnitTests-watchOS" */;
-			buildPhases = (
-				SBP_92006596460 /* Sources */,
-				FBP_92006596460 /* Frameworks */,
-				SSBP_8806247979 /* Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				TD_259652540860 /* PBXTargetDependency */,
-			);
-			name = "HyperSpaceUnitTests-watchOS";
-			productName = "HyperSpaceUnitTests-watchOS";
-			productReference = FR_920065964606 /* HyperSpaceUnitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		NT_929874937904 /* HyperSpace-watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CL_929874937904 /* Build configuration list for PBXNativeTarget "HyperSpace-watchOS" */;
@@ -734,7 +719,6 @@
 				NT_208138567757 /* HyperSpaceUnitTests-iOS */,
 				NT_901842325542 /* HyperSpaceUnitTests-macOS */,
 				NT_376116890244 /* HyperSpaceUnitTests-tvOS */,
-				NT_920065964606 /* HyperSpaceUnitTests-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -746,16 +730,17 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/tvOS/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
 		};
 		SSBP_3236912300 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -763,16 +748,17 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/watchOS/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
 		};
 		SSBP_6564354133 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -780,16 +766,17 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
 		};
 		SSBP_7568678560 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -797,16 +784,17 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
 		};
 		SSBP_7983507445 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -814,33 +802,17 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/tvOS/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
-		};
-		SSBP_8806247979 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/watchOS/Result.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -877,6 +849,7 @@
 				BF_561132030614 /* Query.swift in Sources */,
 				BF_278787314889 /* Route.swift in Sources */,
 				BF_302320079009 /* Router.swift in Sources */,
+				E924696B20717703007A4CB8 /* AnyError.swift in Sources */,
 				BF_857916044330 /* RouterError.swift in Sources */,
 				BF_150046281459 /* Scheme.swift in Sources */,
 				BF_737875550005 /* StatusCode.swift in Sources */,
@@ -915,6 +888,7 @@
 				BF_423839783885 /* Query.swift in Sources */,
 				BF_176450857537 /* Route.swift in Sources */,
 				BF_266607557997 /* Router.swift in Sources */,
+				E924696920717703007A4CB8 /* AnyError.swift in Sources */,
 				BF_274864181325 /* RouterError.swift in Sources */,
 				BF_653654995292 /* Scheme.swift in Sources */,
 				BF_681819731921 /* StatusCode.swift in Sources */,
@@ -937,6 +911,7 @@
 				BF_703195241221 /* Query.swift in Sources */,
 				BF_218541560259 /* Route.swift in Sources */,
 				BF_659102763135 /* Router.swift in Sources */,
+				E924696A20717703007A4CB8 /* AnyError.swift in Sources */,
 				BF_183659285644 /* RouterError.swift in Sources */,
 				BF_190786661955 /* Scheme.swift in Sources */,
 				BF_859279924660 /* StatusCode.swift in Sources */,
@@ -960,22 +935,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		SBP_92006596460 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF_908148473421 /* TestEndPointResult.swift in Sources */,
-				BF_183418532493 /* TestEnvironment.swift in Sources */,
-				BF_366714050507 /* TestIP.swift in Sources */,
-				BF_921712672766 /* TestMethod.swift in Sources */,
-				BF_460596455029 /* TestQuery.swift in Sources */,
-				BF_301831368807 /* TestRoute.swift in Sources */,
-				BF_172730557857 /* TestRoutePath.swift in Sources */,
-				BF_818571017913 /* TestRouter.swift in Sources */,
-				BF_572731970123 /* TestScheme.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		SBP_92987493790 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -991,6 +950,7 @@
 				BF_766609157767 /* Query.swift in Sources */,
 				BF_814088651427 /* Route.swift in Sources */,
 				BF_897028979368 /* Router.swift in Sources */,
+				E924696C20717703007A4CB8 /* AnyError.swift in Sources */,
 				BF_709652466085 /* RouterError.swift in Sources */,
 				BF_303381734575 /* Scheme.swift in Sources */,
 				BF_874271379722 /* StatusCode.swift in Sources */,
@@ -1001,11 +961,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		TD_259652540860 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = NT_929874937904 /* HyperSpace-watchOS */;
-			targetProxy = CIP_92006596460 /* PBXContainerItemProxy */;
-		};
 		TD_628971547484 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = NT_321408082364 /* HyperSpace-tvOS */;
@@ -1304,28 +1259,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-macOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
 				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		BC_592604034085 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
-				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-watchOS";
-				PRODUCT_NAME = HyperSpaceUnitTests;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
 		};
@@ -1339,28 +1276,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-macOS";
 				PRODUCT_NAME = HyperSpaceUnitTests;
 				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		BC_639928160339 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
-				INFOPLIST_FILE = Tests/Resources/HyperSpace/Core/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.thecb4.HyperSpaceUnitTests-watchOS";
-				PRODUCT_NAME = HyperSpaceUnitTests;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
 		};
@@ -1534,15 +1453,6 @@
 			buildConfigurations = (
 				BC_599182787377 /* Debug */,
 				BC_512393108986 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
-		};
-		CL_920065964606 /* Build configuration list for PBXNativeTarget "HyperSpaceUnitTests-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC_639928160339 /* Debug */,
-				BC_592604034085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
