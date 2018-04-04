@@ -62,9 +62,11 @@ import Foundation
 import BrightFutures
 
 extension URLSession {
+  
   public typealias DataTaskResult            = (Data?, URLResponse?)
   public typealias UploadTaskResult          = (Data?, URLResponse?)
   public typealias DownloadTaskResult        = (URL?, URLResponse?)
+  
   public typealias FutureSessionDataTask     = (URLSessionDataTask, Future<DataTaskResult, AnyError>)
   public typealias FutureSessionUploadTask   = (URLSessionUploadTask, Future<DataTaskResult, AnyError>)
   public typealias FutureSessionDownloadTask = (URLSessionDownloadTask, Future<DownloadTaskResult, AnyError>)
