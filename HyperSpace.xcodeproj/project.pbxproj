@@ -122,6 +122,10 @@
 		E924696A20717703007A4CB8 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924696820717703007A4CB8 /* AnyError.swift */; };
 		E924696B20717703007A4CB8 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924696820717703007A4CB8 /* AnyError.swift */; };
 		E924696C20717703007A4CB8 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924696820717703007A4CB8 /* AnyError.swift */; };
+		E9246977207806FC007A4CB8 /* Data.extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9246976207806FC007A4CB8 /* Data.extensions.swift */; };
+		E9246978207806FC007A4CB8 /* Data.extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9246976207806FC007A4CB8 /* Data.extensions.swift */; };
+		E9246979207806FC007A4CB8 /* Data.extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9246976207806FC007A4CB8 /* Data.extensions.swift */; };
+		E924697A207806FC007A4CB8 /* Data.extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9246976207806FC007A4CB8 /* Data.extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +179,7 @@
 
 /* Begin PBXFileReference section */
 		E924696820717703007A4CB8 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
+		E9246976207806FC007A4CB8 /* Data.extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.extensions.swift; sourceTree = "<group>"; };
 		FR_126257123812 /* IP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IP.swift; sourceTree = "<group>"; };
 		FR_131384036341 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		FR_202096821994 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BrightFutures.framework; sourceTree = "<group>"; };
@@ -332,6 +337,7 @@
 				FR_835823662214 /* StatusCode.swift */,
 				FR_898443312606 /* URLSession.extension.swift */,
 				E924696820717703007A4CB8 /* AnyError.swift */,
+				E9246976207806FC007A4CB8 /* Data.extensions.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -844,6 +850,7 @@
 				BF_712893125066 /* HyperSpace.swift in Sources */,
 				BF_821052891582 /* IP.swift in Sources */,
 				BF_917172596270 /* IPv6.swift in Sources */,
+				E9246979207806FC007A4CB8 /* Data.extensions.swift in Sources */,
 				BF_474488225517 /* Method.swift in Sources */,
 				BF_856936525858 /* Path.swift in Sources */,
 				BF_561132030614 /* Query.swift in Sources */,
@@ -883,6 +890,7 @@
 				BF_261071204269 /* HyperSpace.swift in Sources */,
 				BF_752154286271 /* IP.swift in Sources */,
 				BF_186134393255 /* IPv6.swift in Sources */,
+				E9246977207806FC007A4CB8 /* Data.extensions.swift in Sources */,
 				BF_505041186009 /* Method.swift in Sources */,
 				BF_245578832169 /* Path.swift in Sources */,
 				BF_423839783885 /* Query.swift in Sources */,
@@ -906,6 +914,7 @@
 				BF_225211564387 /* HyperSpace.swift in Sources */,
 				BF_797761644778 /* IP.swift in Sources */,
 				BF_670431765923 /* IPv6.swift in Sources */,
+				E9246978207806FC007A4CB8 /* Data.extensions.swift in Sources */,
 				BF_540294777403 /* Method.swift in Sources */,
 				BF_771392511867 /* Path.swift in Sources */,
 				BF_703195241221 /* Query.swift in Sources */,
@@ -945,6 +954,7 @@
 				BF_725755275823 /* HyperSpace.swift in Sources */,
 				BF_659238090422 /* IP.swift in Sources */,
 				BF_473291563250 /* IPv6.swift in Sources */,
+				E924697A207806FC007A4CB8 /* Data.extensions.swift in Sources */,
 				BF_470163234138 /* Method.swift in Sources */,
 				BF_623153013463 /* Path.swift in Sources */,
 				BF_766609157767 /* Query.swift in Sources */,

@@ -105,6 +105,18 @@ public struct Router<T: EndpointType>: URLRepresentable {
       
       print("[DEBUG] response = \(response)")
       
+      guard let dataResult = data?.stringResult() else {
+        let result = EndPointResult(response: response, data: data, error: nil)
+        return Future<EndPointResult,AnyError>(value: result)
+      }
+      
+      switch dataResult {
+      case .success(let string):
+        print("[DEBUG] data string = \(string)")
+      case .failure( let error):
+        print("[DEBUG] data error = \(error)")
+      }
+      
       let result = EndPointResult(response: response, data: data, error: nil)
       return Future<EndPointResult,AnyError>(value: result)
       
