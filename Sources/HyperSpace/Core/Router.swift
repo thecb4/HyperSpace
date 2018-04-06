@@ -105,6 +105,18 @@ public struct Router<T: EndpointType>: URLRepresentable {
       
       print("[DEBUG] response = \(response)")
       
+      guard let dataResult = data?.stringResult() else {
+        let result = EndPointResult(response: response, data: data, error: nil)
+        return Future<EndPointResult,AnyError>(value: result)
+      }
+      
+      switch dataResult {
+      case .success(let string):
+        print("[DEBUG] data string = \(string)")
+      case .failure( let error):
+        print("[DEBUG] data error = \(error)")
+      }
+      
       let result = EndPointResult(response: response, data: data, error: nil)
       return Future<EndPointResult,AnyError>(value: result)
       
@@ -131,99 +143,99 @@ public struct Router<T: EndpointType>: URLRepresentable {
     return request
   }
   
-  @available(*, deprecated, message: "use resolve: instead")
-  public func statusCodeOnly(with session: URLSession = URLSession.shared) -> HTTPStatusCode {
-    
-    var statusCode: Int = 0
-    
-    if HyperSpace.debug {
-      
-      statusCode = 0
-      
-    } else {
-      
-      let _ = session.sendSynchronousRequest(with:self.request()) {
-        
-        (data, response, error) -> Void in
-        
-        if (error != nil) {
-          print(error!)
-        } else {
-          let httpResponse = response as! HTTPURLResponse
-          print(httpResponse)
-          
-          statusCode = httpResponse.statusCode
-          
-        }
-      }
-    }
-    
-    return HTTPStatusCode(statusCode)
-  }
+//  @available(*, deprecated, message: "use resolve: instead")
+//  public func statusCodeOnly(with session: URLSession = URLSession.shared) -> HTTPStatusCode {
+//
+//    var statusCode: Int = 0
+//
+//    if HyperSpace.debug {
+//
+//      statusCode = 0
+//
+//    } else {
+//
+//      let _ = session.sendSynchronousRequest(with:self.request()) {
+//
+//        (data, response, error) -> Void in
+//
+//        if (error != nil) {
+//          print(error!)
+//        } else {
+//          let httpResponse = response as! HTTPURLResponse
+//          print(httpResponse)
+//
+//          statusCode = httpResponse.statusCode
+//
+//        }
+//      }
+//    }
+//
+//    return HTTPStatusCode(statusCode)
+//  }
   
-  @available(*, deprecated, message:"use resolve: instead")
-  public func decodeJSON<T: Decodable>(with session: URLSession = URLSession.shared) -> T? {
-
-    var result:T?
-    
-    if HyperSpace.debug {
-      
-      result = try? JSONDecoder().decode(T.self, from: self.route.mockResponseData)
-      
-    } else {
-    
-      let _ = session.sendSynchronousRequest(with:self.request()) {
-        
-        (data, response, error) -> Void in
-        
-        if (error != nil) {
-          print(error!)
-        } else {
-          let httpResponse = response as! HTTPURLResponse
-          print(httpResponse)
-          
-          guard let data = data else { return }
-          result = try? JSONDecoder().decode(T.self, from: data)
-
-        }
-      }
-    }
-
-    return result
-
-  }
+//  @available(*, deprecated, message:"use resolve: instead")
+//  public func decodeJSON<T: Decodable>(with session: URLSession = URLSession.shared) -> T? {
+//
+//    var result:T?
+//
+//    if HyperSpace.debug {
+//
+//      result = try? JSONDecoder().decode(T.self, from: self.route.mockResponseData)
+//
+//    } else {
+//
+//      let _ = session.sendSynchronousRequest(with:self.request()) {
+//
+//        (data, response, error) -> Void in
+//
+//        if (error != nil) {
+//          print(error!)
+//        } else {
+//          let httpResponse = response as! HTTPURLResponse
+//          print(httpResponse)
+//
+//          guard let data = data else { return }
+//          result = try? JSONDecoder().decode(T.self, from: data)
+//
+//        }
+//      }
+//    }
+//
+//    return result
+//
+//  }
   
-  @available(*, deprecated, message: "use resolve: instead")
-  public func stringResult(with session: URLSession = URLSession.shared) -> String {
-  
-    var result = ""
-  
-    if HyperSpace.debug {
-  
-      result = ""
-  
-    } else {
-  
-    let _ = session.sendSynchronousRequest(with:self.request()) {
-  
-      (data, response, error) -> Void in
-  
-      if (error != nil) {
-        print(error!)
-      } else {
-        let httpResponse = response as! HTTPURLResponse
-        print(httpResponse)
-  
-        guard let data = data else { return }
-        result = String(data: data, encoding: .utf8)!
-  
-        }
-      }
-    }
-  
-    return result
-  }
-  
+//  @available(*, deprecated, message: "use resolve: instead")
+//  public func stringResult(with session: URLSession = URLSession.shared) -> String {
+//
+//    var result = ""
+//
+//    if HyperSpace.debug {
+//
+//      result = ""
+//
+//    } else {
+//
+//    let _ = session.sendSynchronousRequest(with:self.request()) {
+//
+//      (data, response, error) -> Void in
+//
+//      if (error != nil) {
+//        print(error!)
+//      } else {
+//        let httpResponse = response as! HTTPURLResponse
+//        print(httpResponse)
+//
+//        guard let data = data else { return }
+//        result = String(data: data, encoding: .utf8)!
+//
+//        }
+//      }
+//    }
+//
+//    return result
+//  }
+//
 }
 
 public protocol URLRepresentable {
