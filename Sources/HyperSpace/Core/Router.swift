@@ -40,13 +40,15 @@ public struct Router<T: EndpointType>: URLRepresentable {
       return components
   }
   
-  public func resolve(`for` request: URLRequest, with session: URLSession = URLSession.shared) -> EndPointResult {
+  public func resolve(`for` request: URLRequest?, with session: URLSession = URLSession.shared) -> EndPointResult {
     
     var _response: URLResponse?
     var _data: Data?
     var _error: Error?
     
-    let _ = session.sendSynchronousRequest(with:request) {
+    let _request = request ?? self.request()
+    
+    let _ = session.sendSynchronousRequest(with:_request) {
       
       (data, response, error) -> Void in
       
@@ -59,28 +61,6 @@ public struct Router<T: EndpointType>: URLRepresentable {
     return EndPointResult(response:_response, data:_data, error:_error)
     
   }
-  
-//  public func resolve(with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 500, `for` session: URLSession = URLSession.shared) -> EndPointResult {
-//
-//    let request = self.request()
-//
-//    var _response: URLResponse?
-//    var _data: Data?
-//    var _error: Error?
-//
-//    let _ = session.sendSynchronousRequest(with:request) {
-//
-//      (data, response, error) -> Void in
-//
-//        _response = response
-//        _data     = data
-//        _error    = error
-//
-//    }
-//
-//    return EndPointResult(response:_response, data:_data, error:_error)
-//
-//  }
   
   public func resolveLater(
     on request: URLRequest? = nil,
