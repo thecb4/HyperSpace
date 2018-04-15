@@ -41,7 +41,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
   }
   
   @available(*, deprecated, message: "use resolveLater: instead, moving to BrightFutures")
-  public func resolve(_ request: URLRequest?, with session: URLSession = URLSession.shared) -> EndPointResult {
+  public func resolve(_ request: URLRequest? = nil, with session: URLSession = URLSession.shared) -> EndPointResult {
     
     var _response: URLResponse?
     var _data: Data?
