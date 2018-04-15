@@ -40,7 +40,8 @@ public struct Router<T: EndpointType>: URLRepresentable {
       return components
   }
   
-  public func resolve(`for` request: URLRequest?, with session: URLSession = URLSession.shared) -> EndPointResult {
+  @available(*, deprecated, message: "use resolveLater: instead, moving to BrightFutures")
+  public func resolve(_ request: URLRequest?, with session: URLSession = URLSession.shared) -> EndPointResult {
     
     var _response: URLResponse?
     var _data: Data?
