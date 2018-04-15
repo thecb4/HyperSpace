@@ -82,7 +82,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
 //
 //  }
   
-  public func resolve(
+  public func resolveLater(
     on request: URLRequest? = nil,
     with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy,
     timeoutInterval: TimeInterval = 500,
@@ -100,10 +100,9 @@ public struct Router<T: EndpointType>: URLRepresentable {
     
     return f.flatMap { info -> Future<EndPointResult, AnyError> in
       
-      let data     = info.0
-      let response = info.1
+      let (data, response)     = info
       
-      print("[DEBUG] response = \(response)")
+      print("[DEBUG] response = \(String(describing: response))")
       
       guard let dataResult = data?.stringResult() else {
         let result = EndPointResult(response: response, data: data, error: nil)
