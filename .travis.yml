@@ -29,8 +29,9 @@ before_install:
     Carthage)
       brew update;
       brew outdated carthage || brew upgrade carthage;
-      brew tap xcodeswift/sake https://github.com/xcodeswift/sake.git;
-      brew install sake;;
+      brew outdated mint || brew upgrade mint;
+      brew tap yonaskolb/Beak https://github.com/yonaskolb/Beak.git;
+      brew install Beak;;
     SwiftPM)
       if [ "$TRAVIS_OS_NAME" == "linux" ]; then
           eval "$(curl -sL https://swiftenv.fuller.li/install.sh)";
@@ -43,9 +44,9 @@ before_install:
 script:
   - case $DEPMGT in
     Carthage)
-      sake task carthage-build-platform-dependencies;
-      sake task xcode-build-platform;
-      sake task xcode-test-platform;;
+      mint run yonaskolb/beak@master beak run build_carthage_dependencies --platform .$PLATFORM;
+      mint run yonaskolb/beak@master beak run xcode_build --platform .$PLATFORM;
+      mint run yonaskolb/beak@master beak run xcode_test --platform .$PLATFORM;;
     SwiftPM)
       swift test;;
     *)

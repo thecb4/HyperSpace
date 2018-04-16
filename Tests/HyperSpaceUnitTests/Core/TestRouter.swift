@@ -156,19 +156,19 @@ extension SignIn: Equatable {
 struct JSONTest: EndpointType {
   enum Route: RouteType {
     case echo
-    
+
     var route: URL.Route {
       switch self {
       case .echo: return URL.Route(path: ["key", "value", "one", "two"])
       }
     }
-    
+
     var method: URL.Method {
       switch self {
       case .echo: return .get
       }
     }
-    
+
     var headers: [HTTPHeader] {
       switch self {
       case .echo:
@@ -177,31 +177,31 @@ struct JSONTest: EndpointType {
         ]
       }
     }
-    
+
     var body: Data? {
       switch self {
       case .echo:
         return nil
       }
     }
-    
+
     var mockResponseData: Data {
       switch self {
       case .echo:
         return "{\"status\": \"success\"}".data(using: String.Encoding.utf8)!
       }
     }
-    
-    
+
+
     //    var request: URLRequest {
     //      switch self {
     //      case .signIn:
     //        return Request(self)
     //      }
     //    }
-    
+
   }
-  
+
   static let current = URL.Env(.http, "echo.jsontest.com")
 }
 //////////
@@ -246,38 +246,38 @@ class TestRouter: XCTestCase {
     XCTAssertEqual(request.url,URL(string: "https://auth.server.com:8080/api/new/signIn"))
     XCTAssertNotNil(Router<Auth>(at: .signIn).route.body)
   }
-  
+
   func testJSONTestRouter() {
-    
+
     let expectation = self.expectation(description: "task")
-    
+
     let router = Router<JSONTest>(at: .echo)
-    
-    let futureResolve = router.resolve()
-    
+
+    let futureResolve = router.resolveLater()
+
     print("written before future finishes")
-    
+
     futureResolve.onSuccess { result in
-      
+
       print("success")
       print("result = \(result)")
-      
+
       expectation.fulfill()
     }.onFailure { error in
       print("error")
       print("error = \(error)")
       expectation.fulfill()
     }
-    
+
     print("written after future finishes")
-    
+
     waitForExpectations(timeout: 60) { error in
       if let error = error {
         XCTFail("error = \(error.localizedDescription)")
       }
-      
+
     }
-    
+
   }
 
 }
