@@ -73,6 +73,17 @@ struct Api: EndpointType {
       }
     }
 
+    func mockHTTPResponse(url: URL, statusCode: HTTPStatusCode) -> HTTPURLResponse? {
+      
+      return HTTPURLResponse(
+        url: url,
+        statusCode: statusCode.rawValue,
+        httpVersion: "1.1",
+        headerFields: ["Content-Type":"application/json"]
+      )
+      
+    }
+
   }
 
   static let current: Environment = .localhost
@@ -124,14 +135,17 @@ struct Auth: EndpointType {
           return "{\"status\": \"failure\"}".data(using: String.Encoding.utf8)!
       }
     }
-
-
-//    var request: URLRequest {
-//      switch self {
-//      case .signIn:
-//        return Request(self)
-//      }
-//    }
+    
+    func mockHTTPResponse(url: URL, statusCode: HTTPStatusCode) -> HTTPURLResponse? {
+      
+      return HTTPURLResponse(
+        url: url,
+        statusCode: statusCode.rawValue,
+        httpVersion: "1.1",
+        headerFields: ["Content-Type":"application/json"]
+      )
+      
+    }
 
   }
 
@@ -191,17 +205,20 @@ struct JSONTest: EndpointType {
         return "{\"status\": \"success\"}".data(using: String.Encoding.utf8)!
       }
     }
-
-
-    //    var request: URLRequest {
-    //      switch self {
-    //      case .signIn:
-    //        return Request(self)
-    //      }
-    //    }
-
+    
+    func mockHTTPResponse(url: URL, statusCode: HTTPStatusCode) -> HTTPURLResponse? {
+      
+      return HTTPURLResponse(
+        url: url,
+        statusCode: statusCode.rawValue,
+        httpVersion: "1.1",
+        headerFields: ["Content-Type":"application/json"]
+      )
+      
+    }
+    
   }
-
+  
   static let current = URL.Env(.http, "echo.jsontest.com")
 }
 //////////
@@ -222,18 +239,6 @@ class TestRouter: XCTestCase {
     let request = Router<Api>(at: .me).request(with: .useProtocolCachePolicy, timeoutInterval: 500)
     XCTAssertEqual(request.url,URL(string: "http://localhost:8080/me#test"))
     XCTAssertNil(Router<Api>(at: .me).route.body)
-
-//    let result: Result<SignIn, URL.ResponseError> = Router<Api>(.test, at: .auth).resolve().json()
-//    let expected = SignIn(status: "success")
-//
-//    switch result {
-//    case .success( let actual ):
-//        XCTAssertEqual(actual,expected)
-//      case .failure( _ ):
-//        XCTAssertNil(nil)
-//    }
-
-
 
   }
 

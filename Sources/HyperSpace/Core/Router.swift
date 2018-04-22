@@ -67,7 +67,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
     on request: URLRequest? = nil,
     with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy,
     timeoutInterval: TimeInterval = 500,
-    `for` session: URLSession = URLSession.shared) -> Future<EndPointResult, AnyError> {
+    `for` session: URLSession = URLSession.shared) -> Future<EndPointDataResponse, AnyError> {
     
     let _request = request ?? self.request()
     
@@ -79,27 +79,14 @@ public struct Router<T: EndpointType>: URLRepresentable {
     
     print("[DEBUG] Future = \(f)")
     
-    return f.flatMap { info -> Future<EndPointResult, AnyError> in
+    return f.flatMap { info -> Future<EndPointDataResponse, AnyError> in
       
-      let (data, response)     = info
-      
-      print("[DEBUG] response = \(String(describing: response))")
-      
-      guard let dataResult = data?.stringResult() else {
-        let result = EndPointResult(response: response, data: data, error: nil)
-        return Future<EndPointResult,AnyError>(value: result)
+      guard let data = info.0, let response = info.1 else {
+        return Future<EndPointDataResponse, AnyError>(
+          error: AnyError(cause: URL.RouterError.contactFailure(message:"no HTTP response detected") )
+        )
       }
-      
-      switch dataResult {
-      case .success(let string):
-        print("[DEBUG] data string = \(string)")
-      case .failure( let error):
-        print("[DEBUG] data error = \(error)")
-      }
-      
-      let result = EndPointResult(response: response, data: data, error: nil)
-      return Future<EndPointResult,AnyError>(value: result)
-      
+      return Future<EndPointDataResponse, AnyError>(value: EndPointDataResponse(response, data) )
     }
     
   }
@@ -244,6 +231,8 @@ public protocol RouteType {
   var headers: [HTTPHeader] { get }
   var body: Data? { get }
   var mockResponseData: Data { get }
+  
+  func mockHTTPResponse(url: URL, statusCode: HTTPStatusCode) -> HTTPURLResponse?
   
 }
 
