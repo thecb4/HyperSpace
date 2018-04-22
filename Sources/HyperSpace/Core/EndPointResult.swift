@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BrightFutures
 import Result
 
 // https://medium.com/@jamesrochabrun/protocol-based-generic-networking-using-jsondecoder-and-decodable-in-swift-4-fc9e889e8081
@@ -22,7 +23,7 @@ public struct EndPointDataResponse {
   
 }
 
-public typealias EndPointDataResult = Result<(Data, URLResponse), AnyError>
+public typealias FutureEndPointDataResponse = Future<EndPointDataResponse, AnyError>
 
 public struct EndPointResult {
   public let response: URLResponse?
