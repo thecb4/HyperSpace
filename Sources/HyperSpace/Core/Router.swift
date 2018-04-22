@@ -67,7 +67,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
     on request: URLRequest? = nil,
     with cachePolicy:URLRequest.CachePolicy = .useProtocolCachePolicy,
     timeoutInterval: TimeInterval = 500,
-    `for` session: URLSession = URLSession.shared) -> Future<EndPointDataResponse, AnyError> {
+    `for` session: URLSession = URLSession.shared) -> FutureEndPointDataResponse {
     
     let _request = request ?? self.request()
     
@@ -79,14 +79,14 @@ public struct Router<T: EndpointType>: URLRepresentable {
     
     print("[DEBUG] Future = \(f)")
     
-    return f.flatMap { info -> Future<EndPointDataResponse, AnyError> in
+    return f.flatMap { info -> FutureEndPointDataResponse in
       
       guard let data = info.0, let response = info.1 else {
-        return Future<EndPointDataResponse, AnyError>(
+        return FutureEndPointDataResponse(
           error: AnyError(cause: URL.RouterError.contactFailure(message:"no HTTP response detected") )
         )
       }
-      return Future<EndPointDataResponse, AnyError>(value: EndPointDataResponse(response, data) )
+      return FutureEndPointDataResponse(value: EndPointDataResponse(response, data) )
     }
     
   }
