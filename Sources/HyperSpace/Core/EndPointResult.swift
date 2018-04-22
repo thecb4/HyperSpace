@@ -15,6 +15,8 @@ public struct FutureEndPointResult {
   public let data: Data
 }
 
+public typealias EndPointDataResult = Result<(Data, URLResponse), AnyError>
+
 public struct EndPointResult {
   public let response: URLResponse?
   public let data: Data?
@@ -53,6 +55,52 @@ extension EndPointResult {
     guard let result = try? JSONDecoder().decode(T.self, from: data) else { return .failure( .decodeFailure("\(T.self)") ) }
 //    let result = try? JSONDecoder().decode(T.self, from: data)
     return .success(result)
+  }
+  
+}
+
+extension Result where Value == (Data,URLResponse) {
+  
+  public var responseString: Result<String, URL.RouterError> {
+    
+    switch self {
+      case .success(let info):
+        let (_,response) = info
+        return .success( response.description )
+      case .failure(let error):
+        return .failure( .contactFailure(message:"bad response \(error.localizedDescription)") )
+    }
+    
+  }
+  
+  public var httpStatusCode: Result<HTTPStatusCode, URL.RouterError> {
+    
+    switch self {
+      case .success(let info):
+        let (_,response) = info
+        guard let httpResponse = response as? HTTPURLResponse else {
+          return .failure( .contactFailure(message:"no HTTP response detected") )
+        }
+        return .success ( HTTPStatusCode(httpResponse.statusCode) )
+      case .failure(let error):
+        return .failure( .contactFailure(message:"bad response \(error.localizedDescription)") )
+    }
+
+  }
+  
+  public func json<T:Codable>() -> Result<T, URL.ResponseError> {
+    
+    switch self {
+      case .success(let info):
+        let (data,_) = info
+        guard let result = try? JSONDecoder().decode(T.self, from: data) else {
+          return .failure( .decodeFailure("\(T.self)") )
+        }
+        return .success( result )
+      case .failure(let error):
+        return .failure( .decodeFailure("\(T.self) : \(error.localizedDescription)") )
+    }
+
   }
   
 }
