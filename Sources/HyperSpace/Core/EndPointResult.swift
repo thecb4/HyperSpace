@@ -10,9 +10,16 @@ import Result
 
 // https://medium.com/@jamesrochabrun/protocol-based-generic-networking-using-jsondecoder-and-decodable-in-swift-4-fc9e889e8081
 
-public struct FutureEndPointResult {
+public struct EndPointDataResponse {
+  
   public let response: URLResponse
   public let data: Data
+  
+  init(_ response: URLResponse, _ data: Data) {
+    self.response = response
+    self.data     = data
+  }
+  
 }
 
 public typealias EndPointDataResult = Result<(Data, URLResponse), AnyError>
@@ -59,47 +66,31 @@ extension EndPointResult {
   
 }
 
-extension Result where Value == (Data,URLResponse) {
+extension EndPointDataResponse {
   
-  public var responseString: Result<String, URL.RouterError> {
+  public var responseString: String {
     
-    switch self {
-      case .success(let info):
-        let (_,response) = info
-        return .success( response.description )
-      case .failure(let error):
-        return .failure( .contactFailure(message:"bad response \(error.localizedDescription)") )
-    }
+    return response.description
     
   }
   
   public var httpStatusCode: Result<HTTPStatusCode, URL.RouterError> {
     
-    switch self {
-      case .success(let info):
-        let (_,response) = info
-        guard let httpResponse = response as? HTTPURLResponse else {
-          return .failure( .contactFailure(message:"no HTTP response detected") )
-        }
-        return .success ( HTTPStatusCode(httpResponse.statusCode) )
-      case .failure(let error):
-        return .failure( .contactFailure(message:"bad response \(error.localizedDescription)") )
+    guard let httpResponse = response as? HTTPURLResponse else {
+      return .failure( .contactFailure(message:"no HTTP response detected") )
     }
+    
+    return .success ( HTTPStatusCode(httpResponse.statusCode) )
 
   }
   
   public func json<T:Codable>() -> Result<T, URL.ResponseError> {
     
-    switch self {
-      case .success(let info):
-        let (data,_) = info
-        guard let result = try? JSONDecoder().decode(T.self, from: data) else {
-          return .failure( .decodeFailure("\(T.self)") )
-        }
-        return .success( result )
-      case .failure(let error):
-        return .failure( .decodeFailure("\(T.self) : \(error.localizedDescription)") )
+    guard let result = try? JSONDecoder().decode(T.self, from: data) else {
+      return .failure( .decodeFailure("\(T.self)") )
     }
+    
+    return .success( result )
 
   }
   
