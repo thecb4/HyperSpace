@@ -48,7 +48,6 @@
 		BF_405092585448 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; };
 		"BF_405092585448-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_406485678706 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; };
-		"BF_406485678706-1" /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_131384036341 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_423839783885 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_661677042048 /* Query.swift */; };
 		BF_431478383219 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_757384900208 /* TestQuery.swift */; };
 		BF_431805886501 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_202096821994 /* BrightFutures.framework */; };
@@ -79,7 +78,6 @@
 		BF_599444121830 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_607192944469 /* TestRouter.swift */; };
 		BF_623153013463 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_747877092124 /* Path.swift */; };
 		BF_626516198255 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_205585184288 /* BrightFutures.framework */; };
-		"BF_626516198255-1" /* BrightFutures.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_205585184288 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_630605162186 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_669811003841 /* Result.framework */; };
 		BF_640569707638 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_694793547704 /* Host.swift */; };
 		BF_647714166728 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_584425140013 /* Result.framework */; };
@@ -153,17 +151,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CFBP_7383814282 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				"BF_406485678706-1" /* Result.framework in CopyFiles */,
-				"BF_626516198255-1" /* BrightFutures.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CFBP_8576661002 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -600,7 +587,6 @@
 				SBP_32140808236 /* Sources */,
 				HBP_32140808236 /* Headers */,
 				FBP_32140808236 /* Frameworks */,
-				SSBP_7983507445 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -636,7 +622,6 @@
 				SBP_72491406523 /* Sources */,
 				HBP_72491406523 /* Headers */,
 				FBP_72491406523 /* Frameworks */,
-				SSBP_7568678560 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -653,7 +638,6 @@
 			buildPhases = (
 				SBP_74595893778 /* Sources */,
 				FBP_74595893778 /* Frameworks */,
-				CFBP_7383814282 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -688,7 +672,6 @@
 			buildPhases = (
 				SBP_92987493790 /* Sources */,
 				FBP_92987493790 /* Frameworks */,
-				SSBP_3236912300 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -748,24 +731,6 @@
 			shellPath = /bin/sh;
 			shellScript = "carthage copy-frameworks\n";
 		};
-		SSBP_3236912300 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/watchOS/BrightFutures.framework",
-				"$(SRCROOT)/Carthage/Build/watchOS/Result.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "carthage copy-frameworks\n";
-		};
 		SSBP_6564354133 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -774,42 +739,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "carthage copy-frameworks\n";
-		};
-		SSBP_7568678560 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "carthage copy-frameworks\n";
-		};
-		SSBP_7983507445 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/tvOS/BrightFutures.framework",
-				"$(SRCROOT)/Carthage/Build/tvOS/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (

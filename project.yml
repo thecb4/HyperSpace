@@ -31,9 +31,9 @@ targets:
       #commandLineArguments:
     dependencies:
       - carthage: Result
-        embed: true
+        embed: false
       - carthage: BrightFutures
-        embed: true
+        embed: false
   HyperSpaceUnitTests:
     type: bundle.unit-test
     platformSuffix: -$platform
