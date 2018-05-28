@@ -47,7 +47,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
     var _data: Data?
     var _error: Error?
     
-    let _request = request ?? self.request()
+    var _request = request ?? self.request()
 
     #if os(Linux)
       _request = setCookies(on: _request, with: session)
