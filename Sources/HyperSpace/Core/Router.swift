@@ -50,7 +50,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
     let _request = request ?? self.request()
 
     #if os(Linux)
-      request = setCookies(on: request, with: session)
+      _request = setCookies(on: _request, with: session)
     #endif
     
     let _ = session.sendSynchronousRequest(with:_request) {
