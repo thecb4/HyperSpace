@@ -106,9 +106,27 @@ public struct Router<T: EndpointType>: URLRepresentable {
     for header in headers {
       request.addValue(header.value, forHTTPHeaderField: header.field)
     }
-    
+
+    #if os(Linux)
+      request = setCookies(on: request)
+    #endif
+
     return request
   }
+
+  /// SR-7338
+  func setCookies(on request: URLRequest) -> URLRequest {
+    var request = request
+    if httpShouldSetCookies {
+        if let cookieStorage = self.httpCookieStorage, let cookies = cookieStorage.cookies(for: request.url!) {
+            let cookiesHeaderFields =  HTTPCookie.requestHeaderFields(with: cookies)
+            if let cookieValue = cookiesHeaderFields["Cookie"], cookieValue != "" {
+                request.addValue(cookieValue, forHTTPHeaderField: "Cookie")
+            }
+        }
+    }
+    return request
+  }  
   
 //  @available(*, deprecated, message: "use resolve: instead")
 //  public func statusCodeOnly(with session: URLSession = URLSession.shared) -> HTTPStatusCode {
