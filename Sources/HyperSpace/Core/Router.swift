@@ -48,6 +48,10 @@ public struct Router<T: EndpointType>: URLRepresentable {
     var _error: Error?
     
     let _request = request ?? self.request()
+
+    #if os(Linux)
+      request = setCookies(on: request, with: session)
+    #endif
     
     let _ = session.sendSynchronousRequest(with:_request) {
       
@@ -107,18 +111,16 @@ public struct Router<T: EndpointType>: URLRepresentable {
       request.addValue(header.value, forHTTPHeaderField: header.field)
     }
 
-    #if os(Linux)
-      request = setCookies(on: request)
-    #endif
+
 
     return request
   }
 
   /// SR-7338
-  func setCookies(on request: URLRequest) -> URLRequest {
+  func setCookies(on request: URLRequest, with session: URLSession) -> URLRequest {
     var request = request
-    if httpShouldSetCookies {
-        if let cookieStorage = self.httpCookieStorage, let cookies = cookieStorage.cookies(for: request.url!) {
+    if session.configuration.httpShouldSetCookies {
+        if let cookieStorage = session.configuration.httpCookieStorage, let cookies = cookieStorage.cookies(for: request.url!) {
             let cookiesHeaderFields =  HTTPCookie.requestHeaderFields(with: cookies)
             if let cookieValue = cookiesHeaderFields["Cookie"], cookieValue != "" {
                 request.addValue(cookieValue, forHTTPHeaderField: "Cookie")
